@@ -1,5 +1,4 @@
-# COMPLETE SETUP
-
+module.exports = `
 ### STEP 1—DETERMINE SPEAKER:
 
 Randomly determine one player to gain the speaker token; that player is the speaker.
@@ -99,3 +98,4 @@ Prepare objectives as follows:
 4. The speaker reveals the first two stage I objectives.
 
 _[MAP IMAGES]_
+`;

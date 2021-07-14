@@ -1,5 +1,9 @@
+import ReactMarkdown from 'react-markdown'
+
 import Page from '../components/page';
 
-export default function Home() {
-    return <Page title="Complete Setup" />;
+const md = require('../content/setup');
+
+export default function Setup() {
+    return <Page title="Complete Setup" content={<ReactMarkdown children={md} />} />;
 }
