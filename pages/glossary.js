@@ -5,18 +5,16 @@ import Page from '../components/page';
 
 import * as glossary from '../content/glossary';
 
+import styles from '../styles/Glossary.module.scss';
+
 function ItemNumber({ size = "text-sm", number })  {
     return (
-        <span className={`item-number-wrapper relative width-0 overflow-visible`} >
-            <a href={`#${number}`} className={`${size} absolute -left-9 bottom-0`}>
+        <span className={`${styles['item-number-wrapper']} ${size}`} >
+            <a href={`#${number}`} className={`${styles['item-number-link']}`}>
                 {number}
             </a>
         </span>
     );
-}
-
-function itemNumberMd({ size = "text-sm", number }) {
-    return `<span class="relative width-0 overflow-visible"><a href="#${number}" class="${size} absolute -left-9 bottom-0">${number}</a></span> `;
 }
 
 export default function Glossary() {
@@ -29,12 +27,16 @@ export default function Glossary() {
         
         for (let i = 0; i < items.length; i += 1) {
             const firstLink = items[i].getElementsByTagName('a').item(0);
-            if (firstLink.hasAttribute('class')) return;
+            if (firstLink && firstLink.hasAttribute('class')) return;
             
-            const span = window.document.querySelector('.item-number-wrapper').cloneNode();
-            firstLink.setAttribute('class', 'text-sm absolute -left-9 bottom-0');
-            firstLink.parentNode.prepend(span);
-            span.appendChild(firstLink);
+            firstLink.setAttribute('class', styles['item-number-link']);
+
+            const wrapper = window.document.createElement('SPAN');
+            wrapper.classList.add(styles['item-number-wrapper']);
+            wrapper.classList.add('text-sm');
+            
+            firstLink.parentNode.prepend(wrapper);
+            wrapper.appendChild(firstLink);
         }
     })
 
@@ -94,7 +96,7 @@ export default function Glossary() {
                 <Fragment>
                     <ReactMarkdown key="preamble" children={glossary.preamble} />
                     <button onClick={() => { setVal(!val); }}>{val ? 'TRUE' : 'FALSE'}</button>
-                    <div className="pl-9 leading-6" id="glossary-content">{content}</div>
+                    <div className="pl-9 leading-5" id="glossary-content">{content}</div>
                 </Fragment>
             )}
         />
