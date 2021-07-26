@@ -40,7 +40,14 @@ export default function Glossary() {
             sectionItems.push(
                 <ItemSection key={section.name} className="mt-6">
                     <ItemNumber number={sectionNumber} size="text-base" tag="h2" />
-                    <h2>{section.name}</h2>
+                    <Fragment>
+                        <h2 className="mb-2">{section.name}</h2>
+                        {section.preamble && (
+                            <div className="prose prose-lg leading-6 mb-6">
+                                <Markdown>{section.preamble}</Markdown>
+                            </div>
+                        )}
+                    </Fragment>
                 </ItemSection>
             );
         }
