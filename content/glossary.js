@@ -125,11 +125,13 @@ If an action card is canceled, that card has no effect and is discarded.
   },
   {
     name: 'Action Phase',
-    preamble: 'During the action phase, each player takes a turn in initiative order. During a player’s turn, they perform a single action. After each player has taken a turn, player turns begin again in initiative order. This process continues until all players have passed.',
+    preamble: 'During the action phase, each player takes a turn in initiative order.',
     subsections: [
       {
         items: [
 `
+During a player’s turn, they perform a single action. After each player has taken a turn, player turns begin again in initiative order. This process continues until all players have passed.
+`,`
 If a player cannot perform an action, they must pass.
 `,`
 After a player has passed, they have no further turns and cannot perform additional actions during that action phase.
