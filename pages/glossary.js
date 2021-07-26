@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useState, Fragment } from 'react';
-import ReactMarkdown from 'react-markdown';
+import _ from 'lodash';
 
+import Markdown from '../components/markdown';
 import Page from '../components/page';
 
 import * as glossary from '../content/glossary';
@@ -72,12 +73,7 @@ export default function Glossary() {
                     <h3 key="subsection-heading">{subsection.name}</h3>
                 ];
                 if (subsection.preamble) {
-                    subsectionContent.push(
-                        <ReactMarkdown
-                            key="subsection-content"
-                            children={subsection.preamble}
-                        />
-                    );
+                    subsectionContent.push(<Markdown key="subsection-content">{subsection.preamble}</Markdown>);
                 }
                 sectionItems.push(
                     <ItemSection key={subsection.name} className="mt-2">
@@ -88,10 +84,17 @@ export default function Glossary() {
                 itemNumber += 1;
             }
             subsection.items.forEach((item) => {
+                let itemContent = item;
+                if (typeof item === 'object') {
+                    itemContent = _.get(item, 'content');
+                }
+
                 sectionItems.push(
                     <ItemSection key={`item-${sectionNumber}-${itemNumber}`}>
                         <ItemNumber number={`${sectionNumber}.${itemNumber}`} />
-                        <ReactMarkdown children={item} />
+                        <Markdown listType={_.get(item, 'listType')}>
+                            {itemContent}
+                        </Markdown>
                     </ItemSection>
                 );
                 itemNumber += 1;
@@ -106,7 +109,7 @@ export default function Glossary() {
             title="Glossary"
             content={(
                 <Fragment>
-                    <ReactMarkdown key="preamble" children={glossary.preamble} />
+                    <Markdown key="preamble">{glossary.preamble}</Markdown>
                     <dl className="leading-5" id="glossary-content">{content}</dl>
                     <style>{`
                         .item-section-dt > :first-child,
