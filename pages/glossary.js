@@ -59,14 +59,14 @@ export default function Glossary() {
 
         if (section.name) {
             sectionItems.push(
-                <ItemSection key={section.name}>
+                <ItemSection key={section.name} className="mt-6">
                     <ItemNumber number={sectionNumber} size="text-base" tag="h2" />
                     <h2>{section.name}</h2>
                 </ItemSection>
             );
         }
 
-        section.subsections.forEach((subsection) => {
+        (section.subsections || []).forEach((subsection) => {
             if (subsection.name) {
                 const subsectionContent = [
                     <h3 key="subsection-heading">{subsection.name}</h3>
@@ -80,7 +80,7 @@ export default function Glossary() {
                     );
                 }
                 sectionItems.push(
-                    <ItemSection key={subsection.name}>
+                    <ItemSection key={subsection.name} className="mt-2">
                         <ItemNumber number={`${sectionNumber}.${itemNumber}`} tag="h3" />
                         {subsectionContent}
                     </ItemSection>

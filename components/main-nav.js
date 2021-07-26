@@ -55,7 +55,7 @@ export default function MainNav() {
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                             {navigation.map(({ label, path }, itemIdx) =>
                             (
-                                <Fragment>
+                                <Fragment key={path}>
                                     <a
                                         key={path}
                                         href="#"
