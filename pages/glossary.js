@@ -30,28 +30,6 @@ const ItemSection = ({ className = "", children, ...props }) => {
 };
 
 export default function Glossary() {
-
-    // const [val, setVal] = useState(true);
-
-    // useLayoutEffect(() => {
-    //     const content = window.document.getElementById('glossary-content');
-    //     const items = content.getElementsByClassName('glossary-item');
-        
-    //     for (let i = 0; i < items.length; i += 1) {
-    //         const firstLink = items[i].getElementsByTagName('a').item(0);
-    //         if (firstLink && firstLink.hasAttribute('class')) return;
-            
-    //         firstLink.setAttribute('class', styles['item-number-link']);
-
-    //         const wrapper = window.document.createElement('SPAN');
-    //         wrapper.classList.add(styles['item-number-wrapper']);
-    //         wrapper.classList.add('text-sm');
-            
-    //         firstLink.parentNode.prepend(wrapper);
-    //         wrapper.appendChild(firstLink);
-    //     }
-    // })
-
     const content = [];
     content.push(glossary.content.map((section, sectionIdx) => {
         const sectionNumber = sectionIdx + 1;
