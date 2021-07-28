@@ -821,14 +821,217 @@ After the active player resolves the primary ability of the “Diplomacy” stra
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'ELIMINATION',
+    preamble: 'A player who is eliminated is no longer part of the game.',
     subsections: [
       {
         name: '',
         items: [
 `
+A player is eliminated when they meet all of the following three conditions:
 
+1. The player has no ground forces on the game board.
+2. The player has no unit that has “Production.”
+3. The player does not control any planets.
+`,`
+When a player becomes eliminated, all of the units, command tokens, control tokens, promissory notes, technologies, command sheets, and the faction sheet that matches that player’s faction or color are returned to the game box, including those in their reinforcements.
+`,`
+When a player becomes eliminated, all agenda cards they own are discarded.
+`,`
+When a player becomes eliminated, each promissory note they have that matches another player’s faction or color is returned to that player. a Promissory notes that match the eliminated player are returned to the game box, even if another player has them.
+`,`
+When a player becomes eliminated, each action card in their hand is discarded.
+`,`
+When a player becomes eliminated, their strategy cards are returned to the common play area whether those cards have been exhausted or not.
+`,`
+When a player becomes eliminated, their secret objectives are shuffled back into the secret objective deck whether those secret objectives have been completed or not.
+`,`
+If the speaker becomes eliminated, the speaker token passes to the player to the speaker’s left.
+`,`
+If a game that started with five or more players becomes a game with four or fewer players due to elimination, the players continue to select only one strategy card during the strategy phase.
+`,`
+When players are eliminated, faction-specific components interact with the game as follows:
+
+1. If a player becomes eliminated and the Nekro Virus’ assimilator “X” or assimilator “Y” token is placed on one of their faction technologies, that technology remains in play.
+2. If the Ghost of Creuss player becomes eliminated, their wormhole tokens remain on the game board for the remainder of the game.
+3. If the Naalu player becomes eliminated while another player has the Naalu player’s “0” token, that token remains with its current player until the end of the status phase, and then it is removed from play.
+4. If the Titans of Ul player becomes eliminated while their hero or promissory note is attached to a planet, those attachments and attachment tokens remain in play for the remainder of the game.
+5. If the Mahact Gene-Sorcerers become eliminated while they have another player’s command tokens on their faction sheet, those command tokens are returned to their respective players’ reinforcements.
+6. If the Mahact Gene-Sorcerers have an eliminated player’s command token on their faction sheet, that command token remains in play, as does the eliminated player’s commander, if it is unlocked.
+`,`
+If a player becomes eliminated, any units they have captured are returned to the reinforcements of their original owners.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'EXHAUSTED',
+    preamble: 'Some cards can be exhausted. A player cannot resolve abilities or spend the resources or influence of an exhausted card.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+To exhaust a card, a player flips the card facedown.
+`,`
+During the “Ready Cards” step of the status phase, each player readies all of their exhausted cards by flipping those cards faceup.
+`,`
+A player exhausts their planet cards to spend either the resources or influence on that card.
+`,`
+Abilities, including some found on technology cards, may instruct a player to exhaust a card to resolve those abilities. If a card is already exhausted, it cannot be exhausted again.
+
+1. Passive abilities on an exhausted card are still in effect while that card is exhausted.
+`,`
+After a player performs a strategic action, they exhaust the strategy card that corresponds to that action.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'EXPLORATION',
+    preamble: 'Planets and some space areas can be explored, yielding varying results determined by the cards drawn from the exploration decks.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+When a player takes control of a planet that is not already controlled by another player, they explore that planet.
+`,`
+When a player explores a planet, they draw and resolve a card from the exploration deck that corresponds to that planet’s trait.
+
+1. There are three planetary exploration decks, each of which corresponds to a planet trait: cultural, hazardous, and industrial.
+2. Planets that do not have traits, such as Mecatol Rex and planets in home systems, cannot be explored.
+3. If a planet has multiple traits, the player exploring the planet chooses which of the corresponding exploration decks to draw from.
+4. If a player gains control of multiple planets or resolves multiple explore effects at the same time, they choose the order in which they resolve those explorations, completely resolving each exploration card before resolving the next.
+`,`
+Certain abilities may allow a planet to be explored multiple times.
+`,`
+Players can explore space areas that contain frontier tokens if they own the “Dark Energy Tap” technology or if another game effect allows them to.
+
+1. Frontier tokens are placed in systems during setup and by specific abilities.
+`,`
+When a player explores a frontier token, they draw and resolve a card from the frontier exploration deck.
+`,`
+After a frontier token is explored, it is discarded and returned to the supply.
+`,`
+To resolve an exploration card, a player reads the card, makes any necessary decisions, and resolves its ability. If the card was not a relic fragment or an attachment, it is discarded into its respective discard pile.
+
+1. If there are no cards in an exploration deck, its discard pile is shuffled to form a new exploration deck.
+`,`
+If a player resolves an exploration card that has an “attach” header, they attach that card to the planet card of the planet being explored.
+`,`
+If a player resolves an exploration card that has “relic fragment” in the title, they place that card faceup in their play area.
+
+1. Players can resolve the ability of relic fragments that are in their play area. Resolving these abilities allows players to draw cards from the relic deck.
+2. Relic fragments can be exchanged as part of transactions.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'FIGHTER TOKENS',
+    preamble: 'A fighter token functions as a plastic fighter unit for all game purposes.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+When producing a fighter unit, a player can use a fighter token from the supply instead of a plastic piece.
+`,`
+Players can replace their plastic fighters with tokens at any time.
+`,`
+If a player ever has a fighter token in a system that does not contain one of their plastic fighters, that player must replace it with a plastic fighter from their reinforcements.
+
+1. If the player cannot replace the token, the unit is destroyed.
+`,`
+Fighter tokens come in values of one and three. A player can swap between these tokens as necessary.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'FLEET POOL',
+    preamble: 'The fleet pool is an area of a player’s command sheet.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+The number of command tokens in a player’s fleet pool indicates the maximum number of non-fighter ships that a player can have in a system.
+
+1. Units that are on planets or that count against a player’s capacity do not count against that player’s fleet pool.
+2. Units that are being transported through systems do not count against a player’s fleet pool in those systems.
+`,`
+Players place command tokens in their fleet pools with the ship silhouette faceup.
+`,`
+If at any time the number of a player’s non-fighter ships in a system exceeds the number of tokens in that player’s fleet pool, they choose and remove excess ships in that system, returning those units to their reinforcements.
+`,`
+Players do not spend command tokens from this pool unless a game effect specifically allows it.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'FRONTIER TOKENS',
+    preamble: 'Frontier tokens can be explored for a variety of game effects.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+Frontier tokens are placed on the game board during setup. One frontier token is placed in each system that does not contain any planets.
+
+1. Frontier tokens are not placed on hyperlane tiles.
+2. A system cannot have more than one frontier token.
+3. Frontier tokens are placed in anomalies that do not have planets.
+4. A frontier token is placed in the Creuss gate system.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'GAME BOARD',
+    preamble: 'The game board consists of all system tiles in play.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+The game board consists of all system tiles that were placed during setup, even if the sides of those tiles do not touch any other system tiles, such as the Ghosts of Creuss’ home system.
+`,`
+A system tile is on the edge of the game board if any of its sides are not touching another system tile.
+a The Ghosts of Creuss home system and the wormhole nexus are on the edge of the game board.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'GAME ROUND',
+    preamble: `
+A game round consists of the following four phases:
+
+1. Strategy Phase
+2. Action Phase
+3. Status Phase
+4. Agenda Phase
+`,
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+Players skip the agenda phase during the early portion of each game. After the custodians token is removed from Mecatol Rex, the agenda phase is added to each game round.
+`,`
+Player turns occur during the action phase.
+`,`
+Abilities that last until the end of a player’s turn do not persist for the duration of a game round or into the other phases of that game round. Those effects end at the end of that player’s turn, before the next player’s turn begins.
 `,
         ]
       }
@@ -842,7 +1045,6 @@ After the active player resolves the primary ability of the “Diplomacy” stra
         name: '',
         items: [
 `
-
 `,
         ]
       }
@@ -856,7 +1058,487 @@ After the active player resolves the primary ability of the “Diplomacy” stra
         name: '',
         items: [
 `
-
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
 `,
         ]
       }
@@ -873,7 +1555,6 @@ After the active player resolves the primary ability of the “Diplomacy” stra
         name: '',
         items: [
 `
-
 `,`
 
 `,
