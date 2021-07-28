@@ -53,17 +53,16 @@ export default function Glossary() {
         }
 
         (section.subsections || []).forEach((subsection) => {
-            if (subsection.name) {
-                const subsectionContent = [
-                    <h3 key="subsection-heading">{subsection.name}</h3>
-                ];
-                if (subsection.preamble) {
-                    subsectionContent.push(<Markdown key="subsection-content">{subsection.preamble}</Markdown>);
-                }
+            if (subsection.name || subsection.preamble) {
                 sectionItems.push(
                     <ItemSection key={subsection.name} className="mt-2">
                         <ItemNumber number={`${sectionNumber}.${itemNumber}`} tag="h3" />
-                        {subsectionContent}
+                        <Fragment>
+                            <h3 key="subsection-heading">{subsection.name}</h3>
+                            {subsection.preamble && (
+                                <Markdown>{subsection.preamble}</Markdown>
+                            )}
+                        </Fragment>
                     </ItemSection>
                 );
                 itemNumber += 1;
