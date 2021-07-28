@@ -510,21 +510,311 @@ If a unit’s combat value contains two or more burst icons, instead of rolling 
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'COMMAND SHEET',
+    preamble: 'Each player has a command sheet that contains a strategy pool, a tactic pool, a fleet pool, a trade good area, and a quick reference.',
     subsections: [
       {
         name: '',
         items: [
 `
+The pools on the command sheet are where players place their command tokens. Command tokens in a player’s pools are used by that player to perform strategic and tactical actions and to increase the number of ships that player can have in each system.
 `,`
+The trade good area on the command sheet is where a player places their trade good tokens; trade tokens in a player’s trade good area can be spent by that player as resources, influence, or to resolve certain game effects that require trade goods.
 `,`
+Players who are familiar with the game can hide the quick reference by placing that portion of the command sheet under their faction sheets.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'COMMAND TOKENS',
+    preamble: 'Command tokens are a currency that players use to perform actions and expand their fleets.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+Each player begins the game with eight tokens on their command sheet: three in their tactic pool, three in their fleet pool, and two in their strategy pool.
+
+1. Command tokens in the strategy and tactic pool are placed with the faction symbol faceup.
+2. Command tokens in the fleet pool are placed with the ship silhouette faceup.
 `,`
+When a player gains a command token, they choose which of their three pools to place it in.
 `,`
+A player is limited by the amount of command tokens in their reinforcements.
+
+1. If a player would gain a command token but has none available in their reinforcements, that player cannot gain that command token.
+2. If a game effect would place a player’s command token from their reinforcements and none are available, that player must take a token from a pool on their command sheet, unless the token would be placed into a system that already contains one of their command tokens.
 `,`
+During the action phase, a player can perform a tactical action by spending a command token from their tactic pool; they place the command token in a system.
 `,`
+After a player performs a strategic action during the action phase, each other player can resolve the secondary ability of that strategy card by spending a command token from their strategy pool.
+
+1. A player does not spend a command token to resolve the secondary ability of the “Leadership” strategy card.
 `,`
+If a game effect would place a player’s command token in a system where they already have one, they place the token in their reinforcements instead. Any effects that resolve by placing that token are resolved as normal.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'COMMODITIES',
+    preamble: 'Commodities represent goods that are plentiful for their own faction and are desired by other factions. A commodity has no inherent game effects, but converts into a trade good if given to or received from another player.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+Commodities and trade goods are represented by opposite sides of the same token.
+`, `
+The commodity value on a player’s faction sheet indicates the maximum number of commodities that player can have.
+`, `
+When an effect instructs a player to replenish commodities, that player takes the number of commodity tokens necessary so that the amount of commodities that player has equals the commodity value on their faction sheet. Then, those tokens are placed faceup in the commodity area of that player’s faction sheet.
+`, `
+When a player replenishes commodities, that player takes the commodity tokens from the supply.
+`, `
+Players can trade commodities following the rules for transactions. When a player receives a commodity from another player, the player who received that token converts it into a trade good by placing it in the trade good area of their command sheet with the trade good side faceup.
+
+1. That token is no longer a commodity token; it is a trade good token.
+2. A player can trade commodity tokens before resolving a game effect that allows them to replenish commodities.
+3. If a game effect instructs a player to convert a number of their own commodities to trade goods, those trade goods are not treated as being gained for the purpose of triggering other abilities.
+`, `
+Any game effect that instructs a player to give a commodity to another player causes that commodity to be converted into a trade good.
+`, `
+A player cannot spend commodities unless otherwise specified; a player can only trade them during a transaction.
+`, `
+Commodity tokens come in values of one and three. A player can swap between these tokens as necessary.
+`
+        ]
+      }
+    ]
+  },
+  {
+    name: 'COMPONENT ACTION',
+    preamble: 'A component action is a type of action that a player can perform during their turn of an action phase.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+Component actions can be found on various game components, including action cards, technology cards, leaders, exploration cards, relics, promissory notes, and faction sheets. Each component action is indicated by an “Action” header.
 `,`
+To perform a component action, a player reads the action’s text and follows the instructions as described.
+`,`
+A component action cannot be performed if its ability cannot be completely resolved.
+`,`
+If a component action is canceled, it does not use that player’s action.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'COMPONENT LIMITATIONS',
+    preamble: 'If a component type is depleted during the game, players obey the following rules:',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+DICE: Dice are limitless. If a player needs to roll more dice than the game provides, that player should roll as many as possible, record the results, and then reroll dice as necessary
+`,`
+TOKENS: Tokens are limited to those included in the game, except for the following:
+
+* Control Tokens
+* Fighter Tokens
+* Trade Good Tokens
+* Infantry Tokens
+`,`
+If any of the above tokens are depleted, players can use a suitable substitute, such as a coin or bead.
+`,`
+UNITS: Units are limited to those included in the game, except for fighters and ground forces.
+
+1. When a player would place a unit, if there are none of that type left in their reinforcements, that player can remove a unit from any system that does not contain one of their command tokens and place that unit in their reinforcements. A player can remove any number of their units in this way; however, any units that are removed must be placed immediately. Abilities cannot force a player to remove and place a unit in this manner.
+2. When producing a fighter or infantry unit, a player can use a fighter or infantry token, as appropriate, from the supply instead of a plastic piece. These tokens must be accompanied by at least one plastic piece of the same type; players can swap infantry and fighter tokens for plastic pieces at any time.
+`,`
+CARDS: When a deck is depleted, players shuffle the deck’s discard pile and place it facedown to create a new deck.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'CONSTRUCTION (STRATEGY CARD)',
+    preamble: 'The “Construction” strategy card allows players to construct structures on planets they control. This card’s initiative value is “4.”',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+During the action phase, if the active player has the “Construction” strategy card, they can perform a strategic action to resolve that card’s primary ability.
+`,`
+To resolve the primary ability on the “Construction” strategy card, the active player may place either one PDS or one space dock on a planet they control. Then, that player may place an additional PDS on a planet they control.
+
+1. The structures can be placed on the same planet or different planets.
+2. The structures can be placed in any systems, regardless of whether the player has a command token in the system or not.
+`,`
+After the active player resolves the primary ability of the “Construction” strategy card, each other player, beginning with the player to the left of the active player and proceeding clockwise, may spend one command token from their strategy pool and place that command token in any system. If that player already has a command token in that system, the spent token is returned to their reinforcements instead. Then, that player places either one PDS or one space dock on a planet they control in that system.
+`,`
+When a player places either a PDS or space dock using the “Construction” strategy card, they take that PDS or space dock from their reinforcements.
+
+1. If a player does not have the unit in their reinforcements, that player can remove a unit from any system that does not contain one of their command tokens and place that unit in their reinforcements. Then, that player must place the unit on the game board as instructed by the effect that is placing the unit.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'CONTROL',
+    preamble: 'Each player begins the game with control of each planet in their home system. During the game, players can gain control of additional planets.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+When a player gains control of a planet, they take the planet card that corresponds to that planet and place it in their play area; that card is exhausted.
+
+1. If a player is the first player to control a planet, they take the planet card from the planet card deck.
+2. If another player controls the planet, they take that planet’s card from the other player’s play area.
+3. When a player gains control of a planet that is not already controlled by another player, they explore that planet.
+`,`
+A player cannot gain control of a planet that they already control.
+`,`
+While a player controls a planet, that planet’s card remains in their play area until they lose control of that planet.
+`,`
+A player can control a planet that they do not have any units on; that player places a control token on that planet to mark that they control it.
+`,`
+A player loses control of a planet if they no longer have units on it and another player has units on it.
+
+1. The player that placed units on the planet gains control of that planet.
+2. During the invasion step of a tactical action, control is determined during the “Establish Control” step instead.
+`,`
+A player can lose control of a planet through some game effects.
+`,`
+If a player loses control of a planet that contains their control token, they remove their control token from the planet.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'COST (ATTRIBUTE)',
+    preamble: 'Cost is an attribute of some units that is presented on faction sheets and unit upgrade technology cards. A unit’s cost determines the number of resources a player must spend to produce that unit.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+To produce a unit, a player must spend a number of resources equal to or greater than the cost of the unit they are producing.
+`,`
+If the cost is accompanied by two icons—typically for fighters and ground forces—a player produces two of that unit for that cost.
+`,`
+If a unit does not have a cost, it cannot be produced. a Structures do not have costs and are usually placed by resolving the “Construction” strategy card.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'CUSTODIANS TOKEN',
+    preamble: 'The custodians token begins each game on Mecatol Rex. The token represents the caretakers that safeguard the seat of the empire until such time as the galactic council can be reconvened.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+Units can move into the system that contains Mecatol Rex following normal rules; however, players cannot commit ground forces to land on Mecatol Rex until the custodians token is removed from the planet.
+`,`
+Before the “Commit Ground Forces” step of an invasion, the active player can remove the custodians token from Mecatol Rex by spending six influence. Then, that player must commit at least one ground force to land on the planet. a If a player cannot commit ground forces to land on Mecatol Rex, they cannot remove the custodians token.
+`,`
+When a player removes the custodians token from Mecatol Rex, they take the token from the game board and place it in their play area. Then, they gain one victory point.
+`,`
+After a player removes the custodians token from Mecatol Rex, the agenda phase is added to all subsequent game rounds, including the game round during which the custodians token was removed from Mecatol Rex.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'DEALS',
+    preamble: 'A deal is an agreement between two players that may or may not include a transaction that involves physical components.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+Players can make deals with each other at any time, even if they are not neighbors. However, deals that include a transaction must follow the rules for transactions, including that the players be neighbors.
+`,`
+Deals are binding or non-binding according to the conditions of the deal.
+`,`
+If the terms of a deal can be resolved immediately, it is a binding deal. When a deal is binding, a player must adhere to the terms of the agreement and whatever transactions, if any, were agreed upon.
+
+1. The results of playing an action card, including the act of successfully resolving a card, are not instantaneous and cannot be guaranteed. They cannot be part of a binding deal.
+`,`
+If the terms of a deal cannot be resolved immediately, it is a non-binding deal. When a deal is non-binding, a player does not have to adhere to any part of the agreement.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'DEFENDER',
+    preamble: 'During either a space or ground combat, the player who is not the active player is the defender.',
+  },
+  {
+    name: 'DEPLOY',
+    preamble: 'Some units have deploy abilities. Deploy abilities are indicated by the “Deploy” header and provide the means to place specific units on the game board without producing them as normal.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+A player can use a unit’s deploy ability when the ability’s conditions are met to place that unit on the game board. a A player does not have to spend resources to deploy a unit unless otherwise specified.
+`,`
+A player can only resolve a deploy ability to place a unit that is in their reinforcements.
+
+1. If there are no units that have a deploy ability in a player’s reinforcements, the deploy ability cannot be used.
+`,`
+A unit’s deploy ability can be resolved only once per timing window.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'DESTROYED',
+    preamble: 'Various game effects can cause a unit to be destroyed. When a player’s unit is destroyed, it is removed from the game board and returned to their reinforcements.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+When a player assigns hits that were produced against their units, that player chooses a number of their units to be destroyed equal to the number of hits produced against those units.
+`,`
+If a player’s unit is removed from the board by a game effect, it is not treated as being destroyed; effects that trigger when a unit is destroyed are not triggered.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'DIPLOMACY (STRATEGY CARD)',
+    preamble: 'The “Diplomacy” strategy card can be used to preemptively prevent other players from activating a specific system. It can also be used to ready planets. This card’s initiative value is “2.”',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+During the action phase, if the active player has the “Diplomacy” strategy card, they can perform a strategic action to resolve that card’s primary ability.
+`,`
+To resolve the primary ability on the “Diplomacy” strategy card, the active player chooses a system that contains a planet they control other than the Mecatol Rex system; each other player places one command token from their reinforcements in that system. Then, the active player readies any two of their exhausted planets.
+
+1. If a player has no command tokens in their reinforcements, that player places one command token of their choice from their command sheet.
+2. If a player already has a command token in the chosen system, they do not place a command token there.
+`,`
+After the active player resolves the primary ability of the “Diplomacy” strategy card, each other player, beginning with the player to the left of the active player and proceeding clockwise, may spend one command token from their strategy pool to ready up to two exhausted planets they control.
 `,
         ]
       }
@@ -538,14 +828,7 @@ If a unit’s combat value contains two or more burst icons, instead of rolling 
         name: '',
         items: [
 `
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
+
 `,
         ]
       }
@@ -559,14 +842,7 @@ If a unit’s combat value contains two or more burst icons, instead of rolling 
         name: '',
         items: [
 `
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
+
 `,
         ]
       }
@@ -580,287 +856,7 @@ If a unit’s combat value contains two or more burst icons, instead of rolling 
         name: '',
         items: [
 `
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,
-        ]
-      }
-    ]
-  },
-  {
-    name: '',
-    preamble: '',
-    subsections: [
-      {
-        name: '',
-        items: [
-`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,
-        ]
-      }
-    ]
-  },
-  {
-    name: '',
-    preamble: '',
-    subsections: [
-      {
-        name: '',
-        items: [
-`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,
-        ]
-      }
-    ]
-  },
-  {
-    name: '',
-    preamble: '',
-    subsections: [
-      {
-        name: '',
-        items: [
-`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,
-        ]
-      }
-    ]
-  },
-  {
-    name: '',
-    preamble: '',
-    subsections: [
-      {
-        name: '',
-        items: [
-`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,
-        ]
-      }
-    ]
-  },
-  {
-    name: '',
-    preamble: '',
-    subsections: [
-      {
-        name: '',
-        items: [
-`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,
-        ]
-      }
-    ]
-  },
-  {
-    name: '',
-    preamble: '',
-    subsections: [
-      {
-        name: '',
-        items: [
-`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,
-        ]
-      }
-    ]
-  },
-  {
-    name: '',
-    preamble: '',
-    subsections: [
-      {
-        name: '',
-        items: [
-`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,
-        ]
-      }
-    ]
-  },
-  {
-    name: '',
-    preamble: '',
-    subsections: [
-      {
-        name: '',
-        items: [
-`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,
-        ]
-      }
-    ]
-  },
-  {
-    name: '',
-    preamble: '',
-    subsections: [
-      {
-        name: '',
-        items: [
-`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,
-        ]
-      }
-    ]
-  },
-  {
-    name: '',
-    preamble: '',
-    subsections: [
-      {
-        name: '',
-        items: [
-`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,
-        ]
-      }
-    ]
-  },
-  {
-    name: '',
-    preamble: '',
-    subsections: [
-      {
-        name: '',
-        items: [
-`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,
-        ]
-      }
-    ]
-  },
-  {
-    name: '',
-    preamble: '',
-    subsections: [
-      {
-        name: '',
-        items: [
-`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,
-        ]
-      }
-    ]
-  },
-  {
-    name: '',
-    preamble: '',
-    subsections: [
-      {
-        name: '',
-        items: [
-`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
-`,`
+
 `,
         ]
       }
