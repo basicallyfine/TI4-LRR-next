@@ -41,9 +41,9 @@ export default function Glossary() {
                 <ItemSection key={section.name} className="mt-6">
                     <ItemNumber number={sectionNumber} size="text-base" tag="h2" />
                     <Fragment>
-                        <h2 className="mb-2">{section.name}</h2>
+                        <h2 className="mb-0">{section.name}</h2>
                         {section.preamble && (
-                            <div className="prose prose-lg leading-6 mb-6">
+                            <div className="-mt-3 mb-6">
                                 <Markdown>{section.preamble}</Markdown>
                             </div>
                         )}
@@ -67,7 +67,7 @@ export default function Glossary() {
                 );
                 itemNumber += 1;
             }
-            subsection.items.forEach((item) => {
+            (subsection.items || []).forEach((item) => {
                 let itemContent = item;
                 if (typeof item === 'object') {
                     itemContent = _.get(item, 'content');
