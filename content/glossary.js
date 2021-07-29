@@ -1038,6 +1038,516 @@ Abilities that last until the end of a player’s turn do not persist for the du
     ]
   },
   {
+    name: 'GRAVITY RIFT',
+    preamble: 'A gravity rift is an anomaly that affects movement.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+A ship that will move out of or through a gravity rift at any time during its movement, applies +1 to its move value.
+
+1. This can allow a ship to reach the active system from farther away than it normally could.
+`,`
+For each ship that would move out of or through a gravity rift, one die is rolled immediately before it exits the gravity rift system; on a result of 1–3, that ship is removed from the board.
+
+1. Dice are not rolled for units that are being transported by ships that have capacity.
+2. Units that are being transported are removed from the board if the ship transporting them is removed from the board.
+3. Units that are removed are returned to the player’s reinforcements.
+`,`
+A gravity rift can affect the same ship multiple times during a single movement.
+`,`
+A system that contains multiple gravity rifts is treated as a single gravity rift.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'GROUND COMBAT',
+    preamble: 'During the “Ground Combat” step of an invasion, if the active player has ground forces on a planet that contains another player’s ground forces, those players resolve a ground combat on that planet. To resolve a ground combat, players perform the following steps:',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+STEP 1—ROLL DICE: Each player rolls one die for each ground force they have on the planet; this is a combat roll. If a unit’s combat roll produces a result that is equal to or greater than that unit’s combat value, that roll produces a hit.
+
+1. If a unit’s combat value contains two or more burst icons, the player rolls one die for each burst icon instead.
+`,`
+STEP 2—ASSIGN HITS: Each player in the combat must choose one of their own ground forces on the planet to be destroyed for each hit result their opponent produced.
+
+1. When a unit is destroyed, the player who controls that unit removes it from the board and places it in their reinforcements.
+`,`
+After assigning hits, if both players still have ground forces on the planet, players resolve a new combat round starting with the “Roll Dice” step.
+`,`
+Ground combat ends when only one player (or neither player) has ground forces on the planet.
+
+1. During the first round of a combat, “start of combat” and “start of combat round” effects occur during the same timing window.
+2. During the last round of a combat, “end of combat” and “end of combat round” effects occur during the same timing window.
+3. After a combat ends, the player with one or more ground forces remaining on the planet is the winner of the combat; the other player is the loser of the combat.
+4. If neither player has a ground force remaining, there is no winner; the combat ends in a draw.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'GROUND FORCES',
+    preamble: 'A ground force is a type of unit. All infantry and mech units in the game are ground forces. Some races have unique infantry units.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+Ground forces are always on planets, in a space area with ships that have capacity values, or being transported by those ships.
+`,`
+Ground forces being transported by a ship are placed in a system’s space area along with the ship that is transporting them.
+`,`
+There is no limit to the number of ground forces a player can have on a planet.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'HYPERLANES',
+    preamble: 'Hyperlanes are tiles that are used in some game board setups to create adjacency of system tiles that are not touching each other.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+Systems that are connected by lines drawn across one or more hyperlane tiles are adjacent for all purposes.
+`,`
+Hyperlane tiles are not systems. They cannot have units on them and they cannot be targets for effects or abilities.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'IMPERIAL (STRATEGY CARD)',
+    preamble: 'The “Imperial” strategy card allows players to score victory points and draw secret objectives. This card’s initiative value is “8.”',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+During the action phase, if the active player has the “Imperial” strategy card, they can perform a strategic action to resolve that card’s primary ability.
+`,`
+To resolve the primary ability on the “Imperial” strategy card, the active player can score one public objective of their choice if they meet that objective’s requirements as described on its card. Then, if the active player controls Mecatol Rex, they gain one victory point; if they do not control Mecatol Rex, they can draw one secret objective card.
+`,`
+After the active player resolves the primary ability of the “Imperial” strategy card, each other player, beginning with the player to the left of the active player and proceeding clockwise, may spend one command token from their strategy pool to draw one secret objective card.
+`,`
+If a player has more than three secret objective cards after drawing a secret objective, they must choose one of their unscored secret objectives and return it to the secret objective deck. This number includes the secret objective cards in the player’s hand and the cards that player has already scored. Then, they shuffle the secret objective deck.`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'INFANTRY TOKENS',
+    preamble: 'An infantry token functions as a plastic infantry unit for all game purposes.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+When producing an infantry unit, a player can use an infantry token from the supply instead of a plastic piece.
+`,`
+Players can replace their plastic infantry with tokens at any time.
+`,`
+If a player ever has an infantry token on a planet that does not contain one of their plastic infantry or in the space area of a system that does not contain one of their plastic infantry, that player must replace it with one of their plastic infantry from their reinforcements.
+a If that player cannot replace the token, the unit is destroyed.
+`,`
+Infantry tokens come in values of one and three. A player can swap between these tokens as necessary.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'INFLUENCE',
+    preamble: 'Influence represents a planet’s political power. Players spend influence to gain command tokens using the “Leadership” strategy card, and the influence values of planets are used to cast votes during the agenda phase.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+A planet’s influence is the rightmost value (surrounded by a blue border) found on the planet’s system tile and planet card.
+`,`
+A player can spend a planet’s influence by exhausting that planet’s card.
+`,`
+A player can spend a trade good as if it were one influence. a Players cannot spend trade goods to cast votes during the agenda phase.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'INITIATIVE ORDER',
+    preamble: 'Initiative order is the order in which players resolve steps of the action and status phases.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+Initiative order is determined by the initiative numbers on strategy cards.
+
+1. A player who has the Naalu “0” token has the initiative number 0.
+`,`
+Initiative order begins with the player who has the lowest numbered strategy card and proceeds to the player who has the strategy card that is next in numerical order.
+
+1. Only strategy cards that were chosen during the strategy phase are used when determining initiative order; strategy cards not chosen during the strategy phase are ignored.
+`,`
+When playing with three or four players, a player’s initiative is determined only by their lowest-numbered strategy card.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'INVASION',
+    preamble: `
+Invasion is a step of the tactical action during which the active player can land ground forces on planets to gain control of those planets.
+
+To resolve an invasion, players perform the following steps:
+`,
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+STEP 1—BOMBARDMENT: The active player may use the “Bombardment” ability of any of their units in the active system.
+`,`
+STEP 2—COMMIT GROUND FORCES: If the active player has ground forces in the space area of the active system, that player may commit any number of those ground forces to land on any of the planets in that system. a To commit a ground force to a planet, the active player places that ground force unit on that planet. b The planet may contain another player’s ground forces. c If the active player does not wish to commit ground forces, that player proceeds to the “Production” step of the tactical action.
+`,`
+STEP 3—SPACE CANNON DEFENSE: If the active player commits any ground forces to a planet that contains units that have the “Space Cannon” ability, those “Space Cannon” abilities can be used against the committed ground forces.
+
+1. If the active player committed ground forces to more than one planet that contained units with a “Space Cannon” ability, the active player chooses the order in which those “Space Cannon” abilities are resolved.
+`,`
+STEP 4—GROUND COMBAT: If the active player has ground forces on a planet in the active system that contains another player’s ground forces, those players resolve a ground combat on that planet.
+
+1. If players must resolve a combat on more than one planet, the active player chooses the order in which those combats are resolved.
+`,`
+STEP 5—ESTABLISH CONTROL: The active player gains control of each planet they committed ground forces to if that planet still contains at least one of their ground forces.
+
+1. When a player gains control of a planet, any structures on the planet that belong to other players are immediately destroyed.
+2. When a player gains control of a planet, they gain the planet card that matches that planet and exhaust that card.
+3. A player cannot gain control of a planet they already control.
+4. If there was a combat, and all units belonging to both players were destroyed, the player who was the defender retains control of the planet and places one of their control tokens on the planet.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'LEADER SHEET',
+    preamble: 'Each player has a leader sheet that contains slots for their faction’s three leader cards as well as their faction’s mech unit card.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+The leader slots of the leader sheet are where players place their three leader cards during setup. Each slot displays the name of the type of leader that is placed in that slot (agent, commander, and hero) as well as a symbol in the upper-right that helps players quickly determine which side of those leaders begins the game faceup.
+
+1. The sides of the leader cards that display one (agent), two (commander), or three (hero) hash marks, respectively, begin the game faceup.
+`,`
+The mech slot of the leader sheet is where players place their mech unit cards during setup.
+`,`
+Players who are familiar with the game can hide the quick reference by placing that portion of the leader sheet under their faction sheets.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'LEADERS',
+    preamble: 'Each player has several faction-specific leader cards that represent characters with unique abilities.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+Each faction has three leaders; one agent, one commander, and one hero.
+
+1. The Nomad’s “The Company” faction ability grants them two additional agents, for a total of five leaders.
+`,`
+A player’s leaders are placed on their leader sheet during setup.
+
+1. Each leader card is placed on the slot that matches its type. The leader cards are placed so that the hash mark symbols in the upper right are faceup and match the slot that the card is placed on.
+2. The two additional Nomad agents are placed in the Nomad player’s play area readied side up.
+`
+        ]
+      },
+      {
+        name: 'Agents',
+        items: [
+`
+An agent does not need to be unlocked and begins the game in a readied state. They can be exhausted by resolving their abilities, and they ready during the “Ready Cards” step of the status phase.
+`
+        ]
+      },
+      {
+        name: 'COMMANDERS',
+        items: [
+`
+A commander must be unlocked to use its abilities. A player unlocks their commander if they fulfill the conditions listed after the “Unlock” header.
+
+1. Each faction’s commander has a unique “Unlock” condition.
+2. After a player fulfills the unlock condition of their commander, they flip it over to its unlocked side.
+3. A commander’s unlock conditions cannot be met while an ability or game effect is being resolved. That is, pending abilities or partially resolved game effects must be completed before checking if conditions are met.
+4. A commander cannot flip to its locked side after it is unlocked, even if its owner no longer meets the unlock conditions.
+`,`
+A commander cannot be exhausted.
+`,`
+The “Alliance” promissory note allows a player to share their commander’s ability with another player.
+
+1. A commander’s owner can still use their commander’s ability, even if another player has their “Alliance” promissory note.
+`
+        ]
+      },
+      {
+        name: 'HEROES',
+        items: [
+`
+A hero needs to be unlocked to use their abilities. A player unlocks their hero if they fulfill the conditions listed after the “Unlock” header.
+
+1. The “Unlock” condition for each hero is to have three scored objectives; these can be any combination of secret objectives and public objectives.
+2. Victory points do not count toward unlocking heroes.
+3. After a player fulfills the unlock condition of their hero, they flip it to its unlocked side.
+4. A hero cannot flip to its locked side after it is unlocked.
+`,`
+A hero cannot be exhausted.
+`,`
+A hero is purged after its abilities are resolved.
+
+1. The Titans of Ul’s hero is not purged; it is attached to the planet Elysium instead.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'LEADERSHIP (STRATEGY CARD)',
+    preamble: 'The “Leadership” strategy card allows players to gain command tokens. This card’s initiative value is “1.”',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+During the action phase, if the active player has the “Leadership” strategy card, they can perform a strategic action to resolve that card’s primary ability.
+`,`
+To resolve the primary ability on the “Leadership” strategy card, the active player gains three command tokens. Then, that player can spend any amount of their influence to gain one command token for every three influence they spend.
+`,`
+After the active player resolves the primary ability of the “Leadership” strategy card, each other player, beginning with the player to the left of the active player and proceeding clockwise, may spend any amount of influence to gain one command token for every three influence they spend.
+`,`
+When a player gains command tokens, that player places each token on their command sheet in the pool of their choice.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'LEGENDARY PLANETS',
+    preamble: 'Legendary planets grant the player that controls them unique, planet-specific abilities.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+A legendary planet is indicated by the legendary planet icon.
+`,`
+When a player gains control of a legendary planet, they also place its legendary planet ability card in their play area.
+
+1. If a player gains control of a legendary planet ability card from the deck, it is readied.
+2. If a player gains control of an exhausted legendary planet ability card, it remains exhausted.
+`,`
+Players can use the abilities on the legendary planet ability cards in their play area.
+`,`
+If a legendary planet’s planet card is purged, its corresponding legendary planet ability card is also purged.
+
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'MECATOL REX',
+    preamble: 'Mecatol Rex is the planet placed in the center of the game board during setup.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+During setup, the custodians token is placed on Mecatol Rex. This token prevents a player from committing ground forces to land on the planet unless they spend six influence to remove the token.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'MECHS',
+    preamble: 'Mechs are unique, faction-specific heavy ground forces.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+Mechs are a type of ground force and can be transported and participate in ground combat.
+`,`
+Each player begins with their mech unit card in play on their leader sheet and can produce mechs for the cost presented on the card.
+`,`
+Some mechs have “Deploy” abilities which allow a player to place them on the game board without producing them normally.
+`,`
+Mech unit cards are not technologies.`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'MODIFIERS',
+    preamble: 'A modifier is a number that is applied by an ability to increase or decrease the attribute values of a unit or the results of a die roll.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+A modifier is always preceded by the word “apply” followed by a numerical value.
+`,`
+A modifier value preceded by a “+” is added to the attribute or result being modified; a modifier value preceded by a “-” is subtracted from the attribute or result being modified.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'MOVE (ATTRIBUTE)',
+    preamble: 'Move is an attribute of some units that is presented on faction sheets and unit upgrade technology cards.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+A unit’s move value indicates the distance from its current system that it can move during the “Movement” step of a tactical action.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'MOVEMENT',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+A player can move their ships by resolving a tactical action during the action phase. Additionally, some abilities can move a unit outside of the tactical action.
+`,
+        ]
+      },
+      {
+        name: 'TACTICAL ACTION MOVEMENT',
+        items: [
+`
+A ship’s move value is presented along with its other attributes on faction sheets and unit upgrade technology cards. This value indicates the distance from its current system that a ship can move.
+
+To resolve movement, players perform the following steps:
+`,`
+STEP 1—MOVE SHIPS: A player can move any number of their eligible ships into the active system, obeying the
+following rules:
+
+1. The ship must end its movement in the active system.
+2. The ship cannot move through a system that contains ships that are controlled by another player.
+3. The ship cannot move if it started its movement in another system that contains one of its faction’s command tokens.
+4. The ship can move through systems that contain its own faction’s command tokens.
+5. The ship can move out of the active system and back into it if its move value is high enough.
+6. The ship must move along a path of adjacent systems, and the number of systems the ship enters cannot exceed its move value.
+`,`
+When a ship with a capacity value moves or is moved, it may transport ground forces and fighters.
+`,`
+The active player declares which of their ships are moving before any ships move. Those ships arrive in the active system simultaneously.
+`,`
+STEP 2—SPACE CANNON OFFENSE: After the “Move Ships” step, players can use the “Space Cannon” abilities of their units in the active system.
+`
+        ]
+      },
+      {
+        name: 'ABILITY MOVEMENT',
+        items: [
+`
+If an ability moves a unit outside of the “Movement” step of a tactical action, players follow the rules specified by that ability; neither a unit’s move value nor the rules specified above apply.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'NEBULA',
+    preamble: 'A nebula is an anomaly that affects movement and combat.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+A ship can only move into a nebula if it is the active system. a A ship cannot move through a nebula. That is, a ship cannot move into and out of a nebula during the same movement.
+`,`
+A ship that begins the “Movement” step of a tactical action in a nebula treats its move value as “1” for the duration of that step.
+
+1. Other abilities and effects can increase this number.
+`,`
+If a space combat occurs in a nebula, the defender applies +1 to each combat roll of their ships during that combat.
+
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'NEIGHBORS',
+    preamble: 'Two players are neighbors if they both have a unit or control a planet in the same system. They are also neighbors if they both have a unit or control a planet in systems that are adjacent to each other.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+Players can resolve transactions with their neighbors.
+`,`
+Players are neighbors if the adjacency of systems is granted by a wormhole.
+`,`
+Players are neighbors with the Ghosts of Creuss if the Ghosts of Creuss’ “Quantum Entanglement” faction ability is causing adjacency from the perspective of the Ghosts of Creuss player.`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: '',
+    preamble: '',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+`,
+        ]
+      }
+    ]
+  },
+  {
     name: '',
     preamble: '',
     subsections: [
@@ -1547,21 +2057,6 @@ Abilities that last until the end of a player’s turn do not persist for the du
 ];
 
 /*
-  {
-    name: '',
-    preamble: '',
-    subsections: [
-      {
-        name: '',
-        items: [
-`
-`,`
-
-`,
-        ]
-      }
-    ]
-  },
   {
     name: 'Section heading',
     preamble: 'Non-numbered content below the heading',

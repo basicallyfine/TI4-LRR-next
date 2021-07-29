@@ -23,7 +23,7 @@ const ItemSection = ({ className = "", children, ...props }) => {
     const [number, content] = React.Children.toArray(children);
     return (
         <div {...props} className={`item-section flex flex-row ${className}`}>
-            <dt className="item-section-dt w-9 flex-shrink-0">{number}</dt>
+            <dt className="item-section-dt w-9 mr-3 flex-shrink-0 text-right">{number}</dt>
             <dd className="item-section-dd flex-grow w-auto">{content}</dd>
         </div>
     )
