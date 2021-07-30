@@ -1522,237 +1522,490 @@ Players are neighbors with the Ghosts of Creuss if the Ghosts of Creuss’ “Qu
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'OBJECTIVE CARDS',
+    preamble: 'Players can score objectives to gain victory points.',
     subsections: [
       {
         name: '',
         items: [
 `
+There are two types of objective cards: public objectives and secret objectives.
+
+1. Each public objective has a “I” or “II” on the back of its card; all other objectives are secret objectives.
+`,`
+Each objective card indicates a number of victory points that a player gains by scoring that objective.
+`,`
+Each objective card indicates the phase during which a player can score that objective—the status, action, or agenda phases.
+`,`
+Each objective card describes the requirement a player must fulfill to score that objective.
+`,`
+If a player fulfills the requirement described on an objective card, they can score that objective following the timing indicated on the card, either during the action phase or the status phase.
+
+1. When a player scores an objective during the status phase, they must fulfill the requirement on the card during the “Score Objectives” step of the status phase to score that objective.
+2. When a player scores an objective during the action phase, they can do so at any time during that phase.
+3. When a player scores an objective during the agenda phase, they can do so at any time during that phase.
+`,`
+A player can score a maximum of one public objective and one secret objective during each status phase.
+`,`
+A player can score any number of objectives during the agenda phase or during a turn of the action phase; however, they can only score one objective during or after each combat.
+
+1. A player can score an objective during both the space combat and the ground combat during the same tactical action.
+`,`
+A player can score each objective only once during the game.
+
+`,`
+If an objective requires a player to destroy one or more units, those units can be destroyed by producing hits against them, playing action cards, using technology, or any number of other abilities that use the “destroy” terminology.
+
+1. Forcing a player to remove a unit from the board by reducing the number of command tokens in their fleet pool is not treated as destroying a unit.
+`,`
+Players can score some objectives by spending resources, influence, or tokens, as described by the objective card. To score such an objective, a player must pay the specified cost at the time indicated on the card.
+`,
+        ]
+      },
+      {
+        name: 'PUBLIC OBJECTIVES',
+        preamble: 'A public objective is an objective that is revealed to all players.',
+        items: [
+`
+When scoring a public objective, the player places one of their control tokens on that objective’s card. Then, that player advances their control token on the victory point track a number of spaces equal to the number of victory points gained.
+`,`
+Each game contains five stage I and five stage II public objective cards that the speaker places facedown near the victory point track during setup.
+
+1. The speaker reveals two of the stage I objective cards during setup. All other objective cards remain facedown.
+`,`
+During each status phase, the speaker reveals a facedown public objective card.
+
+1. The speaker does not reveal stage II objective cards until all stage I objective cards are revealed.
+`,`
+If the speaker must reveal a facedown public objective card but all public objective cards are already revealed, the game ends immediately.
+
+1. The player with the most victory points is the winner. If one or more players are tied for having the most victory points, the tied player who is first in initiative order is the winner.
+`,`
+A player cannot score public objectives if that player does not control each planet in their home system.
+`,
+        ]
+      },
+      {
+        name: 'SECRET OBJECTIVES',
+        preamble: 'A secret objective is an objective that is controlled by one player and is hidden from all other players until it is scored.',
+        items: [
+`
+When scoring a secret objective, a player reveals the objective by placing it faceup in their play area. Then, they place one of their control tokens on that objective’s card and advances their control token on the victory point track a number of spaces equal to the number of victory points gained.
+
+`,`
+A player can only score their own secret objectives; a player cannot score secret objectives revealed by other players.
+`,`
+Each player begins the game with one secret objective.
+`,`
+Each player can have up to three total scored and unscored secret objectives.
+
+1. If a player draws a secret objective and has more than three, that player must choose one of their unscored secret objectives and return it to the deck. Then, that player shuffles the secret objective deck.
+`,`
+A player can gain secret objectives by resolving either the primary or secondary ability of the “Imperial” strategy card.
+`,
+        ]
+      },
+    ]
+  },
+  {
+    name: 'OPPONENT',
+    preamble: 'During combat, a player’s opponent is the other player that either has ships in the system at the start of the space combat or has ground forces on the planet at the start of a ground combat.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+Players who do not have units on either side of a combat are not opponents. Those players cannot use abilities or have abilities used against them that are used against an opponent.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'PDS',
+    preamble: 'A PDS (planetary defense system) is a structure that allows a player to defend their territory against invading forces.',
     subsections: [
       {
         name: '',
         items: [
 `
+Each PDS has the “Space Cannon” ability.
+`,`
+The primary way by which players acquire PDS units is by resolving either the primary or secondary ability of the “Construction” strategy card.
+`,`
+A PDS unit is placed on a planet. Each planet can have a maximum of two PDS units.
+`,`
+If a player’s PDS is ever on a planet that does not contain any of their own ground forces and contains a unit that belongs to another player, that PDS is destroyed.
+
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'PLANETS',
+    preamble: 'Planets provide players with resources and influence. Planets are on system tiles and each has a name, a resource value, and an influence value. Some planets also have traits.',
     subsections: [
       {
         name: '',
         items: [
 `
+A planet’s resources are indicated by the value on its planet card and system tile that is surrounded by a yellow triangular border.
+`,`
+A planet’s influence is indicated by the value on its planet card and system tile that is surrounded by a blue hexagonal border.
+`,`
+A planet’s trait has no inherent effects, but some game effects refer to a planet’s trait. There are three traits: cultural, hazardous, and industrial.
+
+`,`
+Some planets have a technology specialty, which allows those planets to be exhausted to satisfy a prerequisite when researching technology.
+`,`
+Some planets are legendary planets, as indicated by the legendary planet icon. When a player gains control of a legendary planet, they also gain control of its legendary planet ability card.
+`,
+        ]
+      },
+      {
+        name: 'PLANET CARD',
+        preamble: 'Each planet has a corresponding planet card that displays its name, resource value, influence value, and trait, if it has one. If a player controls a planet, they keep that planet’s card in their play area.',
+        items: [
+`
+A planet card has both a readied and exhausted state. When a planet is readied, it is placed faceup. When a planet is exhausted, it is placed facedown.
+`,`
+A player can spend a readied planet’s resources or influence.
+`,`
+A player cannot spend an exhausted planet’s resources or influence.
+`,
+        ]
+      },
+    ]
+  },
+  {
+    name: 'PLANETARY SHIELD (UNIT ABILITY)',
+    preamble: 'Units cannot use the “Bombardment” ability against a planet that contains a unit that has the “Planetary Shield” ability.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+The “Planetary Shield” ability does not prevent a planet from being affected by the “X-89 Bacterial Weapon” technology.
+`,`
+The “Planetary Shield” ability prevents an L1Z1X player from using their “Harrow” faction ability.
+`,`
+If a war sun is in a system with any number of other players’ units that have the “Planetary Shield” ability, those units are treated as if they do not have that ability.
+a Units treated as if they do not have a “Planetary Shield” ability cannot use the “Magen Defense Grid” technology.
+b A war sun can use its “Bombardment” ability against planets that contain units that have the “Planetary Shield” ability.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'POLITICS (STRATEGY CARD)',
+    preamble: 'The “Politics” strategy card allows players to draw action cards. Additionally, the active player chooses a new speaker and looks at cards in the agenda deck. This card’s initiative value is “3.”',
     subsections: [
       {
         name: '',
         items: [
 `
+During the action phase, if the active player has the “Politics” strategy card, they can perform a strategic action to resolve that card’s primary ability.
+`,{
+  listType: 'i',
+  content: `
+To resolve the primary ability on the “Politics” strategy card, the active player resolves the following effects in order:
+
+1. The active player chooses any player that does not have the speaker token. The active player may choose themselves as long as they do not have the speaker token. The chosen player places the speaker token in their play area; they are now the speaker.
+2. The active player draws two action cards.
+3.The active player secretly looks at the top two cards of the agenda deck. Then, that player places each card on either the top or the bottom of the deck. If they place both cards on either the top or bottom, they can place them in any order.
+`
+},`
+After the active player resolves the primary ability of the “Politics” strategy card, each other player, beginning with the player to the left of the active player and proceeding clockwise, may spend one command token from their strategy pool to draw two action cards.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'PRODUCING UNITS',
+    preamble: 'The primary way that a player produces new units is by resolving the “Production” abilities of existing units during a tactical action. However, other game effects also allow players to produce units.',
     subsections: [
       {
         name: '',
         items: [
 `
+Each unit that a player can produce has a cost value presented on its faction sheet or technology card. To produce a unit, a player must spend a number of resources equal to or greater than the cost value of the unit they are producing.
+
+1. Spent resources must come from planets or trade goods that are controlled by the player who is producing the units.
+2. Any resources spent in excess of a unit’s cost are lost.
+3. If a player is producing multiple units at a time, that player can add the cost of each unit they are producing to create a total cost before they spend any resources.
+`,`
+If the cost is accompanied by two icons—typically for fighters and infantry—a player produces two of that unit for that cost.
+1. Each of the two units counts toward the total number of units a player can produce.
+2. A player can choose to produce only one unit; however, they must still pay the entire cost.
+`,`
+When a player produces a unit through the use of their units’ “Production” abilities during a tactical action, that player follows the rules of the “Production” ability to determine where in the active system the units can be placed.
+`,`
+When a player produces a unit through an ability outside of the tactical action, that ability will state how many units that player can produce and where that player can place those units.
+
+1. A player cannot produce a unit on a planet they do not control.
+2. If an ability allows a player to produce a unit in a system, they may produce that unit in the space area or on a planet they control in that system.
+`,`
+A player is limited by the number of units in their reinforcements.
+
+1. If a player cannot produce a unit because it is not in their reinforcements, that player can remove a unit from any system that does not contain one of their command tokens and place that unit in their reinforcements. Then, that player can produce that unit. A player can remove any number of their units in this way; however, any units that are removed must be produced immediately.
+2. When producing a fighter or infantry unit, a player can use a fighter or infantry token, as appropriate, from the supply instead of a plastic piece.
+`,`
+A player cannot produce ships in a system that contains other players’ ships. a Ground forces can still be produced.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'PRODUCTION (UNIT ABILITY)',
+    preamble: 'During the “Production” step of a tactical action, the active player can resolve the “Production” ability of each of their units that are in the active system to produce units.',
     subsections: [
       {
         name: '',
         items: [
 `
+A unit’s “Production” ability, which is presented on a faction sheet or unit upgrade technology card, is always followed by a value. This value is the maximum number of units that this unit can produce.
+
+1. If the active player has multiple units in the active system that have the “Production” ability, that player can produce a number of units up to the combined total of their units’ production values in that system.
+2. When producing fighters or infantry, each individual unit counts toward the producing unit’s production limit.
+3. A player can choose to produce one fighter or infantry instead of two, but must still pay the entire cost.
+4. “Production” value from Arborec space docks cannot be used to produce infantry, even if the Arborec player controls other units that have “Production” in the same system.
+`,`
+When a player produces ships by using “Production,” that player must place them in the active system.
+`,`
+When a player produces ground forces, that player must place those unit on planets that contain a unit that used its “Production” ability.
+`,`
+If a player uses the “Production” ability of a unit in a space area of a system to produce ground forces, those ground forces may either be placed on a planet the player controls in that system or in the space area of that system.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'PROMISSORY NOTES',
+    preamble: 'Each player begins the game with one unique and five generic promissory note cards that can be given to other players.',
     subsections: [
       {
         name: '',
         items: [
 `
+Each promissory note contains timing text and ability text. A player can resolve any of their promissory note cards by following the text on the card.
+1. Promissory notes are not mandatory unless otherwise specified.
+`,`
+A player cannot play their color’s or faction’s promissory notes. Since the cards are only valuable to other players, promissory notes can be traded as powerful negotiation tools.
+`,`
+Promissory notes that are returned to a player are returned after their abilities have been completely resolved.
+`,`
+If a promissory note is returned to a player, that player may give it to other players again as part of a future transaction.
+
+1. An unrevealed promissory note is not subject to effects in its ability text that return the card if certain conditions are met.
+`,`
+When resolving a transaction, a player can trade a maximum of one promissory note from their hand to another player, even if that card originally belonged to another player.
+
+1. Promissory notes in the play area cannot be traded.
+`,`
+Players should keep their hands of promissory notes hidden.
+`,`
+If a player is eliminated, all of the promissory notes that match their color or faction are returned to the game box, including those that are in play or owned by other players.
+
+1. Other players’ promissory notes are returned to those players.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'PURGE',
+    preamble: 'Purge is a cost that permanently removes a component from the game. If an ability requires that its component is purged, that component can only be used once per game.',
     subsections: [
       {
         name: '',
         items: [
 `
+If an ability instructs a player to purge a component, that component is removed from the game and returned to the box.
+`,`
+Purged components cannot be used or otherwise returned to the game by any means.
+`,`
+When a player is intructed to purge a component, that component is purged even if its ability was only partially resolved.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'READIED',
+    preamble: 'Cards have a readied state, which indicates that a player can exhaust or resolve the abilities on those cards.',
     subsections: [
       {
         name: '',
         items: [
 `
+A card that is readied is placed faceup in a player’s play area; a card that is exhausted is placed facedown in a player’s area.
+`,`
+A player can exhaust a readied planet card to spend resources or influence from that card’s planet.
+`,`
+A player can exhaust certain readied technology cards to resolve those cards’ abilities.
+
+1. Such a technology will specifically instruct a player to exhaust the card as part of the ability’s cost.
+`,`
+If a card is exhausted, a player cannot resolve that card’s abilities or spend resources or influence on that card until it is readied.
+`,`
+During a “Ready Cards” step, each player readies all of their exhausted cards by flipping them faceup.
+`,`
+When a player performs a strategic action, they exhaust their chosen strategy card.
+
+1. That card is later readied during the status phase.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'REINFORCEMENTS',
+    preamble: 'A player’s reinforcements is that player’s personal supply of units and command tokens that are not on the game board or otherwise in use.',
     subsections: [
       {
         name: '',
         items: [
 `
+The components in a player’s reinforcements are limited.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'RELICS',
+    preamble: 'Relics are powerful artifacts with unique abilities.',
     subsections: [
       {
         name: '',
         items: [
 `
+Players can use the abilities of hazardous, cultural, and industrial relic fragments in their play area to draw cards from the relic deck.
+
+1. Relic fragments can be found when exploring planets and frontier tokens, and can be exchanged with other players as part of transactions.
+`,`
+When a player is instructed to gain a relic, they draw the top card of the relic deck and place it faceup in their play area.
+
+1. If there are no cards in the relic deck, they do not gain a relic.
+`,`
+A player can use the abilities of relics that are in their play area.
+`,`
+Relics cannot be traded.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'REROLLS',
+    preamble: 'Some game effects instruct a player to reroll dice.',
     subsections: [
       {
         name: '',
         items: [
 `
+When a die is rerolled, its new result is used instead of its previous result.
+`,`
+The same ability cannot be used to reroll the same die multiple times, but multiple abilities can be used to reroll a single die.
+`,`
+Die rerolls must occur after rolling the dice, before other abilities are resolved.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'RESOURCES',
+    preamble: 'Resources represent a planet’s material value and industry. Many game effects, such as producing units, require players to spend resources.',
     subsections: [
       {
         name: '',
         items: [
 `
+A planet’s resources are the leftmost value that is surrounded by a yellow border on the planet’s system tile and planet card.
+`,`
+A player spends a planet’s resources by exhausting its card.
+`,`
+A player can spend a trade good as if it were one resource.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'SHIPS',
+    preamble: 'A ship is a unit type consisting of carriers, cruisers, dreadnoughts, destroyers, fighters, and war suns. Each race also has a unique flagship.',
     subsections: [
       {
         name: '',
         items: [
 `
+Ships are always placed in space.
+`,`
+A player can have a number of ships in a system equal to or less than the number of command tokens in that player’s fleet pool. a Fighters do not count toward the fleet pool limit, and instead count against a player’s capacity.
+`,`
+Ships can have any number of the following attributes: cost, combat, move, and capacity. These attributes are shown on faction sheets and unit upgrade technology cards.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'SPACE CANNON (UNIT ABILITY)',
+    preamble: 'A unit that has the “Space Cannon” ability can use it during two different steps of a player’s tactical action: after the “Move Ships” substep (Space Cannon Offense) and during an invasion (Space Cannon Defense).',
     subsections: [
       {
         name: '',
         items: [
 `
+A player is not required to be the active player to use their “Space Cannon” ability of their units.
 `,
         ]
-      }
-    ]
-  },
-  {
-    name: '',
-    preamble: '',
-    subsections: [
+      },
       {
-        name: '',
+        name: 'SPACE CANNON OFFENSE',
+        preamble: 'During a tactical action, after the “Move Ships” substep of the “Movement” step, beginning with the active player and proceeding clockwise, each player may use the “Space Cannon” ability of each of their units in the active system by performing the following steps:',    
         items: [
 `
+STEP 1—ROLL DICE: The player rolls dice for each of their units in the active system that has the “Space Cannon” ability; this is a space cannon roll. One hit is produced for each result that is equal to or greater than the unit’s “Space Cannon” value.
+
+1. A unit’s “Space Cannon” ability is presented along with a unit’s attributes on faction sheets and unit upgrade technology cards.
+2. “Space Cannon” is displayed as “Space Cannon X (xY).” The X is the minimum value needed for a die to produce a hit, and Y is the number of dice rolled. Not all “Space Cannon” abilities are accompanied by a (Y) value; a space cannon roll for such a unit consists of one die.
+3. If a player has a PDS unit upgrade technology, they can use the “Space Cannon” ability of their PDS units that are in systems that are adjacent to the active system. The hits are still assigned to units in the active system.
+4. Game effects that reroll, modify, or otherwise affect combat rolls do not affect space cannon rolls.
+`,`
+This ability can be used even if no ships were moved during the “Move Ships” step.
+`,`
+STEP 2—ASSIGN HITS: The player whose units have been targeted by “Space Cannon” must choose and destroy one of their ships in the active system for each hit result produced against their units.
+
+1. Players other than the active player must target the active player’s units.
+2. If the active player is using the “Space Cannon” ability of their units, they choose a player who has ships in the active system. That player must choose and destroy one of their ships in the active system for each hit the space cannon roll produced.
 `,
         ]
-      }
-    ]
-  },
-  {
-    name: '',
-    preamble: '',
-    subsections: [
+      },
       {
-        name: '',
+        name: 'SPACE CANNON DEFENSE',
+        preamble: 'During the invasion step of a tactical action, after ground forces have been committed to land on planets, players other than the active player can resolve the “Space Cannon” ability of their units on those planets by performing the following steps:',
         items: [
 `
+STEP 1—ROLL DICE: Each player may use the “Space Cannon” ability of each of their units on the invaded planet by rolling a specific number of dice for each of those units; this is called a space cannon roll. A hit is produced for each die roll that is equal to or greater than the unit’s “Space Cannon” value.
+
+1. If a unit has a “Space Cannon” ability, it is present on its faction sheet and technology cards.
+2. “Space Cannon” is displayed as “Space Cannon X (xY).” The X is the minimum value needed for a die to produce a hit, and Y is the number of dice rolled. Not all “Space Cannon” abilities are accompanied by a (Y) value; a space cannon roll for such a unit consists of one die.
+3. Game effects that reroll, modify, or otherwise affect combat rolls do not affect space cannon rolls.
+4. Game effects that allow the use of “Space Cannon” abilities against ships in adjacent systems have no effect during Space Cannon Defense.
+`,`
+STEP 2—ASSIGN HITS: The active player must choose and destroy one of their ground forces on the planet for each hit the space cannon roll produced.
+
+1. Hits can only be assigned to units that are on the same planet as the units using the “Space Cannon” ability.
 `,
         ]
-      }
-    ]
-  },
-  {
-    name: '',
-    preamble: '',
-    subsections: [
-      {
-        name: '',
-        items: [
-`
-`,
-        ]
-      }
+      },
     ]
   },
   {
