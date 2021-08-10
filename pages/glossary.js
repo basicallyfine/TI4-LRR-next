@@ -69,13 +69,19 @@ export default function Glossary() {
             }
             (subsection.items || []).forEach((item) => {
                 let itemContent = item;
+                const itemNumberProps = {};
                 if (typeof item === 'object') {
                     itemContent = _.get(item, 'content');
+                    if (item.name) {
+                        itemContent = `### ${item.name}\n\n${itemContent}`;
+                        // itemNumberProps.size = 'text-base';
+                        itemNumberProps.tag = 'h3';
+                    }
                 }
 
                 sectionItems.push(
                     <ItemSection key={`item-${sectionNumber}-${itemNumber}`}>
-                        <ItemNumber number={`${sectionNumber}.${itemNumber}`} />
+                        <ItemNumber {...itemNumberProps} number={`${sectionNumber}.${itemNumber}`} />
                         <Markdown listType={_.get(item, 'listType')}>
                             {itemContent}
                         </Markdown>

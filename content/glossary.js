@@ -2009,26 +2009,101 @@ STEP 2—ASSIGN HITS: The active player must choose and destroy one of their gro
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'SPACE COMBAT',
+    preamble: 'After resolving the “Space Cannon Offense” step of a tactical action, if two players have ships in the active system, those players must resolve a space combat.',
     subsections: [
       {
         name: '',
         items: [
 `
+If the active player is the only player with ships in the system, they skip the “Space Combat” step of the tactical action and proceeds to the “Invasion” step.
+`,`
+If an ability occurs “before combat,” it occurs immediately before the “Anti-Fighter Barrage” step.
+
+1. During the first round of a combat, “start of combat” and “start of combat round” effects occur during the same timing window.
+2. During the last round of a combat, “end of combat” and “end of combat round” effects occur during the same timing window.
+
+To resolve a space combat, players perform the following steps:
+`,
+{
+  name: 'STEP 1—ANTI-FIGHTER BARRAGE',
+  content: `
+  If this is the first round of a space combat, the players may simultaneously use the “Anti-Fighter Barrage” ability of any of their units in the active system.
+  
+  1. If one or both players no longer have ships in the active system after resolving this step, the space combat ends immediately.
+  2. Players cannot resolve “Anti-Fighter Barrage” abilities during any rounds of space combat other than the first round.
+  3. This step still occurs if no fighters are present.
+  `
+}, {
+  name: 'STEP 2—ANNOUNCE RETREATS',
+  content: `
+Each player may announce a retreat, beginning with the defender.
+
+1. A retreat will not occur immediately; the units retreat during the “Retreat” step.
+2. If the defender announces a retreat, the attacker cannot announce a retreat during that combat round.
+3. A player cannot announce a retreat if there is not at least one eligible system to retreat to.
+`
+}, {
+  name: 'STEP 3—ROLL DICE',
+  content: `
+Each player rolls one die for each ship they have in the active system; this is called a combat roll. If a unit’s combat roll produces a result that is equal to or greater than that unit’s combat value, that result produces a hit.
+
+1. If a unit’s combat value contains two or more burst icons, the player rolls one die for each burst icon instead.
+2. If a player has ships that have different combat values in the active system, that player rolls these dice separately.
+3. First, that player should roll all dice for units with a combat value of “1.” Then, that player should roll all dice for units with combat value of “2,” and then “3,” continuing in numerical order until that player has rolled dice for each of their ships.
+4. The player counts each hit their combat rolls produce. The total number of hits produced will destroy units during the “Assign Hits” step.
+5. If a player has an ability that rerolls a die or affects a die after it is rolled, that player must resolve such an ability immediately after rolling all of their dice.
+6. The attacker makes all of their combat rolls during this step before the defender. This procedure is important for abilities that allow a player to reroll an opponent’s die.
+`
+}, {
+  name: 'STEP 4—ASSIGN HITS',
+  content: `
+Each player in the combat must choose and destroy one of their own ships in the active system for each hit their opponent produced.
+
+1. Before assigning hits, players may use their units’ “Sustain Damage” abilities to cancel hits.
+2. When a unit is destroyed, the player who controls that unit removes it from the board and places it in their reinforcements.
+`
+}, {
+  name: 'STEP 5—RETREAT',
+  content: `
+If a player announced a retreat during step 2, and there is still an eligible system for their units to retreat to, they must retreat.
+
+1. If a player announced a retreat during the “Announce Retreats” step, but their opponent has no ships remaining in the system, the combat immediately ends and the retreat does not occur.
+2. To retreat, a player takes all of their ships with a move value in the combat and moves them to a single system that is adjacent to the active system. That player’s fighters and ground forces in the space area of the active system that are unable to move or be transported are removed.
+3. The system that a player’s units retreat to must contain one or more of that player’s units, a planet they control, or both. Additionally, the system cannot contain ships controlled by another player.
+4. If any of a player’s units successfully retreat and are moved into an adjacent system, that player must place a command token from their reinforcements in the system to which their units retreated. If that system already contains one of their command tokens, that player does not place an additional token there. If the player has no command tokens in their reinforcements, that player must use one from their command sheet instead.
+`
+},
+`
+After the “Retreat” step, if both players still have ships in the active system, those players resolve another round of space combat beginning with the “Announce Retreats” step.
+`,`
+Space combat ends when only one player—or neither player— has a ship in the space area of the active system. a During the last round of a combat, “end of combat” and “end of combat round” effects occur during the same timing window.
+`,`
+After a combat ends, the player with one or more ships remaining in the system is the winner of the combat; the other player is the loser of the combat. If neither player has a ship remaining, the combat ends in a draw and there is no winner.
+
+1. If the winner of the combat has fighters or ground forces in the space area of the active system and those units exceed the capacity of that player’s ships in that system, that player must choose and remove any excess units.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'SPACE DOCK',
+    preamble: 'A space dock is a structure that allows players to produce units.',
     subsections: [
       {
         name: '',
         items: [
 `
+Each space dock has a “Production” ability that indicates the number of units it can produce.
+`,`
+The primary way in which players acquire space docks is by resolving either the primary or secondary abilities of the “Construction” strategy card.
+`,`
+Space docks are placed on planets. Each planet can have a maximum of one space dock.
+`,`
+If a player’s space dock is ever on a planet that does not contain any of their ground forces and contains a unit that belongs to another player, that space dock is destroyed.
+
+1. The Clan of Saar’s “Floating Factory” faction-specific space dock is destroyed when it is blockaded; that is to say, when it is in a system with another player’s ships and none of the Clan of Saar’s ships.
 `,
         ]
       }
