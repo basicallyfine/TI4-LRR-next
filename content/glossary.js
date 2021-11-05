@@ -244,11 +244,11 @@ When resolving a directive, players resolve the outcome that received the most v
 `
 Players skip the agenda phase during the early portion of each game. After the custodians token is removed from Mecatol Rex, the agenda phase is added to each game round. To resolve the agenda phase, players perform the following steps:
 `,`
-STEP 1—FIRST AGENDA: Players resolve the first agenda by following these steps in order: i. REVEAL AGENDA: The speaker draws one agenda card from the top of the agenda deck and reads it aloud to all players, including all of its possible outcomes. ii. VOTE: Each player, starting with the player to the left of the speaker and continuing clockwise, can cast votes for an outcome of the current agenda. iii. RESOLVE OUTCOME: Players tally each vote that was cast and resolve the outcome that received the most votes.
+STEP 1- FIRST AGENDA: Players resolve the first agenda by following these steps in order: i. REVEAL AGENDA: The speaker draws one agenda card from the top of the agenda deck and reads it aloud to all players, including all of its possible outcomes. ii. VOTE: Each player, starting with the player to the left of the speaker and continuing clockwise, can cast votes for an outcome of the current agenda. iii. RESOLVE OUTCOME: Players tally each vote that was cast and resolve the outcome that received the most votes.
 `,`
-STEP 2—SECOND AGENDA: Players repeat the “First Agenda” step of this phase for a second agenda.
+STEP 2- SECOND AGENDA: Players repeat the “First Agenda” step of this phase for a second agenda.
 `,`
-STEP 3—READY PLANETS: Each player readies each of their exhausted planets. Then, a new game round begins starting with the strategy phase.
+STEP 3- READY PLANETS: Each player readies each of their exhausted planets. Then, a new game round begins starting with the strategy phase.
 `,
         ]
       },
@@ -341,14 +341,14 @@ Abilities can cause a system to be two different anomalies; that system has the 
         name: '',
         items: [
 `
-STEP 1—Each player rolls dice for each of their units in the combat that has the “Anti-Fighter Barrage” ability; this is called an anti-fighter barrage roll. A hit is produced for each die roll that is equal to or greater than the unit’s anti-fighter barrage value.
+STEP 1- Each player rolls dice for each of their units in the combat that has the “Anti-Fighter Barrage” ability; this is called an anti-fighter barrage roll. A hit is produced for each die roll that is equal to or greater than the unit’s anti-fighter barrage value.
 
 1. A unit’s “Anti-Fighter Barrage” ability is presented along with a unit’s attributes on faction sheets and unit upgrade technology cards.
 2. The “Anti-Fighter Barrage” ability is displayed as “AntiFighter Barrage X (xY).” The X is the minimum value needed for a die to produce a hit, and Y is the number of dice rolled.
 3. Game effects that reroll, modify, or otherwise affect combat rolls do not affect anti-fighter barrage rolls.
 4. This ability can still be used if no fighters are present; hits produced may be used to trigger specific abilities.
 `,`
-STEP 2:—Each player must choose and destroy one of their fighters in the active system for each hit their opponent’s antifighter barrage roll produced.
+STEP 2- Each player must choose and destroy one of their fighters in the active system for each hit their opponent’s antifighter barrage roll produced.
 
 1. If a player has to assign more hits than they have fighters in the active system, the excess hits have no effect.
 `,
@@ -421,7 +421,7 @@ When a player blockades another player’s space dock, if the blockaded player h
         name: '',
         items: [
 `
-STEP 1— The active player chooses which planet each of their units that has a “Bombardment” ability will bombard. Then, that player rolls dice for each of those units; this is called a bombardment roll. A hit is produced for each die roll that is equal to or greater than the unit’s “Bombardment” value.
+STEP 1- The active player chooses which planet each of their units that has a “Bombardment” ability will bombard. Then, that player rolls dice for each of those units; this is called a bombardment roll. A hit is produced for each die roll that is equal to or greater than the unit’s “Bombardment” value.
 
 1. A unit’s “Bombardment” ability is presented along with a unit’s attributes on faction sheets and unit upgrade technology cards.
 2. The “Bombardment” ability is displayed as “Bombardment X (xY).” The X is the minimum value needed for a die to produce a hit, and Y is the number of dice rolled. Not all “Bombardment” abilities have a (Y) value; a bombardment roll for such a unit consists of one die.
@@ -430,7 +430,7 @@ STEP 1— The active player chooses which planet each of their units that has a 
 5. The L1Z1X’s “Harrow” ability does not affect the L1Z1X player’s own ground forces.
 6. Planets that contain a unit with the “Planetary Shield” ability cannot be bombarded.
 `,`
-STEP 2— The player who controls the planet that is being bombarded chooses and destroys one of their ground forces on that planet for each hit result the bombardment roll produced.
+STEP 2- The player who controls the planet that is being bombarded chooses and destroys one of their ground forces on that planet for each hit result the bombardment roll produced.
 1. If a player has to assign more hits than that player has ground forces, the excess hits have no effect.
 `,
         ]
@@ -709,7 +709,7 @@ If a player loses control of a planet that contains their control token, they re
 `
 To produce a unit, a player must spend a number of resources equal to or greater than the cost of the unit they are producing.
 `,`
-If the cost is accompanied by two icons—typically for fighters and ground forces—a player produces two of that unit for that cost.
+If the cost is accompanied by two icons-typically for fighters and ground forces-a player produces two of that unit for that cost.
 `,`
 If a unit does not have a cost, it cannot be produced. a Structures do not have costs and are usually placed by resolving the “Construction” strategy card.
 `,
@@ -1006,7 +1006,8 @@ Frontier tokens are placed on the game board during setup. One frontier token is
 The game board consists of all system tiles that were placed during setup, even if the sides of those tiles do not touch any other system tiles, such as the Ghosts of Creuss’ home system.
 `,`
 A system tile is on the edge of the game board if any of its sides are not touching another system tile.
-a The Ghosts of Creuss home system and the wormhole nexus are on the edge of the game board.
+
+1. The Ghosts of Creuss home system and the wormhole nexus are on the edge of the game board.
 `,
         ]
       }
@@ -1049,7 +1050,7 @@ A ship that will move out of or through a gravity rift at any time during its mo
 
 1. This can allow a ship to reach the active system from farther away than it normally could.
 `,`
-For each ship that would move out of or through a gravity rift, one die is rolled immediately before it exits the gravity rift system; on a result of 1–3, that ship is removed from the board.
+For each ship that would move out of or through a gravity rift, one die is rolled immediately before it exits the gravity rift system; on a result of 1-3, that ship is removed from the board.
 
 1. Dice are not rolled for units that are being transported by ships that have capacity.
 2. Units that are being transported are removed from the board if the ship transporting them is removed from the board.
@@ -1071,11 +1072,11 @@ A system that contains multiple gravity rifts is treated as a single gravity rif
         name: '',
         items: [
 `
-STEP 1—ROLL DICE: Each player rolls one die for each ground force they have on the planet; this is a combat roll. If a unit’s combat roll produces a result that is equal to or greater than that unit’s combat value, that roll produces a hit.
+STEP 1- ROLL DICE: Each player rolls one die for each ground force they have on the planet; this is a combat roll. If a unit’s combat roll produces a result that is equal to or greater than that unit’s combat value, that roll produces a hit.
 
 1. If a unit’s combat value contains two or more burst icons, the player rolls one die for each burst icon instead.
 `,`
-STEP 2—ASSIGN HITS: Each player in the combat must choose one of their own ground forces on the planet to be destroyed for each hit result their opponent produced.
+STEP 2- ASSIGN HITS: Each player in the combat must choose one of their own ground forces on the planet to be destroyed for each hit result their opponent produced.
 
 1. When a unit is destroyed, the player who controls that unit removes it from the board and places it in their reinforcements.
 `,`
@@ -1158,7 +1159,8 @@ When producing an infantry unit, a player can use an infantry token from the sup
 Players can replace their plastic infantry with tokens at any time.
 `,`
 If a player ever has an infantry token on a planet that does not contain one of their plastic infantry or in the space area of a system that does not contain one of their plastic infantry, that player must replace it with one of their plastic infantry from their reinforcements.
-a If that player cannot replace the token, the unit is destroyed.
+
+1. If that player cannot replace the token, the unit is destroyed.
 `,`
 Infantry tokens come in values of one and three. A player can swap between these tokens as necessary.
 `,
@@ -1218,19 +1220,19 @@ To resolve an invasion, players perform the following steps:
         name: '',
         items: [
 `
-STEP 1—BOMBARDMENT: The active player may use the “Bombardment” ability of any of their units in the active system.
+STEP 1- BOMBARDMENT: The active player may use the “Bombardment” ability of any of their units in the active system.
 `,`
-STEP 2—COMMIT GROUND FORCES: If the active player has ground forces in the space area of the active system, that player may commit any number of those ground forces to land on any of the planets in that system. a To commit a ground force to a planet, the active player places that ground force unit on that planet. b The planet may contain another player’s ground forces. c If the active player does not wish to commit ground forces, that player proceeds to the “Production” step of the tactical action.
+STEP 2- COMMIT GROUND FORCES: If the active player has ground forces in the space area of the active system, that player may commit any number of those ground forces to land on any of the planets in that system. a To commit a ground force to a planet, the active player places that ground force unit on that planet. b The planet may contain another player’s ground forces. c If the active player does not wish to commit ground forces, that player proceeds to the “Production” step of the tactical action.
 `,`
-STEP 3—SPACE CANNON DEFENSE: If the active player commits any ground forces to a planet that contains units that have the “Space Cannon” ability, those “Space Cannon” abilities can be used against the committed ground forces.
+STEP 3- SPACE CANNON DEFENSE: If the active player commits any ground forces to a planet that contains units that have the “Space Cannon” ability, those “Space Cannon” abilities can be used against the committed ground forces.
 
 1. If the active player committed ground forces to more than one planet that contained units with a “Space Cannon” ability, the active player chooses the order in which those “Space Cannon” abilities are resolved.
 `,`
-STEP 4—GROUND COMBAT: If the active player has ground forces on a planet in the active system that contains another player’s ground forces, those players resolve a ground combat on that planet.
+STEP 4- GROUND COMBAT: If the active player has ground forces on a planet in the active system that contains another player’s ground forces, those players resolve a ground combat on that planet.
 
 1. If players must resolve a combat on more than one planet, the active player chooses the order in which those combats are resolved.
 `,`
-STEP 5—ESTABLISH CONTROL: The active player gains control of each planet they committed ground forces to if that planet still contains at least one of their ground forces.
+STEP 5- ESTABLISH CONTROL: The active player gains control of each planet they committed ground forces to if that planet still contains at least one of their ground forces.
 
 1. When a player gains control of a planet, any structures on the planet that belong to other players are immediately destroyed.
 2. When a player gains control of a planet, they gain the planet card that matches that planet and exhaust that card.
@@ -1455,7 +1457,7 @@ A ship’s move value is presented along with its other attributes on faction sh
 
 To resolve movement, players perform the following steps:
 `,`
-STEP 1—MOVE SHIPS: A player can move any number of their eligible ships into the active system, obeying the
+STEP 1- MOVE SHIPS: A player can move any number of their eligible ships into the active system, obeying the
 following rules:
 
 1. The ship must end its movement in the active system.
@@ -1469,7 +1471,7 @@ When a ship with a capacity value moves or is moved, it may transport ground for
 `,`
 The active player declares which of their ships are moving before any ships move. Those ships arrive in the active system simultaneously.
 `,`
-STEP 2—SPACE CANNON OFFENSE: After the “Move Ships” step, players can use the “Space Cannon” abilities of their units in the active system.
+STEP 2- SPACE CANNON OFFENSE: After the “Move Ships” step, players can use the “Space Cannon” abilities of their units in the active system.
 `
         ]
       },
@@ -1535,7 +1537,7 @@ There are two types of objective cards: public objectives and secret objectives.
 `,`
 Each objective card indicates a number of victory points that a player gains by scoring that objective.
 `,`
-Each objective card indicates the phase during which a player can score that objective—the status, action, or agenda phases.
+Each objective card indicates the phase during which a player can score that objective-the status, action, or agenda phases.
 `,`
 Each objective card describes the requirement a player must fulfill to score that objective.
 `,`
@@ -1691,8 +1693,9 @@ The “Planetary Shield” ability does not prevent a planet from being affected
 The “Planetary Shield” ability prevents an L1Z1X player from using their “Harrow” faction ability.
 `,`
 If a war sun is in a system with any number of other players’ units that have the “Planetary Shield” ability, those units are treated as if they do not have that ability.
-a Units treated as if they do not have a “Planetary Shield” ability cannot use the “Magen Defense Grid” technology.
-b A war sun can use its “Bombardment” ability against planets that contain units that have the “Planetary Shield” ability.
+
+1. Units treated as if they do not have a “Planetary Shield” ability cannot use the “Magen Defense Grid” technology.
+2. A war sun can use its “Bombardment” ability against planets that contain units that have the “Planetary Shield” ability.
 `,
         ]
       }
@@ -1737,7 +1740,7 @@ Each unit that a player can produce has a cost value presented on its faction sh
 2. Any resources spent in excess of a unit’s cost are lost.
 3. If a player is producing multiple units at a time, that player can add the cost of each unit they are producing to create a total cost before they spend any resources.
 `,`
-If the cost is accompanied by two icons—typically for fighters and infantry—a player produces two of that unit for that cost.
+If the cost is accompanied by two icons-typically for fighters and infantry-a player produces two of that unit for that cost.
 1. Each of the two units counts toward the total number of units a player can produce.
 2. A player can choose to produce only one unit; however, they must still pay the entire cost.
 `,`
@@ -1972,7 +1975,7 @@ A player is not required to be the active player to use their “Space Cannon”
         preamble: 'During a tactical action, after the “Move Ships” substep of the “Movement” step, beginning with the active player and proceeding clockwise, each player may use the “Space Cannon” ability of each of their units in the active system by performing the following steps:',    
         items: [
 `
-STEP 1—ROLL DICE: The player rolls dice for each of their units in the active system that has the “Space Cannon” ability; this is a space cannon roll. One hit is produced for each result that is equal to or greater than the unit’s “Space Cannon” value.
+STEP 1- ROLL DICE: The player rolls dice for each of their units in the active system that has the “Space Cannon” ability; this is a space cannon roll. One hit is produced for each result that is equal to or greater than the unit’s “Space Cannon” value.
 
 1. A unit’s “Space Cannon” ability is presented along with a unit’s attributes on faction sheets and unit upgrade technology cards.
 2. “Space Cannon” is displayed as “Space Cannon X (xY).” The X is the minimum value needed for a die to produce a hit, and Y is the number of dice rolled. Not all “Space Cannon” abilities are accompanied by a (Y) value; a space cannon roll for such a unit consists of one die.
@@ -1981,7 +1984,7 @@ STEP 1—ROLL DICE: The player rolls dice for each of their units in the active 
 `,`
 This ability can be used even if no ships were moved during the “Move Ships” step.
 `,`
-STEP 2—ASSIGN HITS: The player whose units have been targeted by “Space Cannon” must choose and destroy one of their ships in the active system for each hit result produced against their units.
+STEP 2- ASSIGN HITS: The player whose units have been targeted by “Space Cannon” must choose and destroy one of their ships in the active system for each hit result produced against their units.
 
 1. Players other than the active player must target the active player’s units.
 2. If the active player is using the “Space Cannon” ability of their units, they choose a player who has ships in the active system. That player must choose and destroy one of their ships in the active system for each hit the space cannon roll produced.
@@ -1993,14 +1996,14 @@ STEP 2—ASSIGN HITS: The player whose units have been targeted by “Space Cann
         preamble: 'During the invasion step of a tactical action, after ground forces have been committed to land on planets, players other than the active player can resolve the “Space Cannon” ability of their units on those planets by performing the following steps:',
         items: [
 `
-STEP 1—ROLL DICE: Each player may use the “Space Cannon” ability of each of their units on the invaded planet by rolling a specific number of dice for each of those units; this is called a space cannon roll. A hit is produced for each die roll that is equal to or greater than the unit’s “Space Cannon” value.
+STEP 1- ROLL DICE: Each player may use the “Space Cannon” ability of each of their units on the invaded planet by rolling a specific number of dice for each of those units; this is called a space cannon roll. A hit is produced for each die roll that is equal to or greater than the unit’s “Space Cannon” value.
 
 1. If a unit has a “Space Cannon” ability, it is present on its faction sheet and technology cards.
 2. “Space Cannon” is displayed as “Space Cannon X (xY).” The X is the minimum value needed for a die to produce a hit, and Y is the number of dice rolled. Not all “Space Cannon” abilities are accompanied by a (Y) value; a space cannon roll for such a unit consists of one die.
 3. Game effects that reroll, modify, or otherwise affect combat rolls do not affect space cannon rolls.
 4. Game effects that allow the use of “Space Cannon” abilities against ships in adjacent systems have no effect during Space Cannon Defense.
 `,`
-STEP 2—ASSIGN HITS: The active player must choose and destroy one of their ground forces on the planet for each hit the space cannon roll produced.
+STEP 2- ASSIGN HITS: The active player must choose and destroy one of their ground forces on the planet for each hit the space cannon roll produced.
 
 1. Hits can only be assigned to units that are on the same planet as the units using the “Space Cannon” ability.
 `,
@@ -2026,7 +2029,7 @@ If an ability occurs “before combat,” it occurs immediately before the “An
 To resolve a space combat, players perform the following steps:
 `,
 {
-  name: 'STEP 1—ANTI-FIGHTER BARRAGE',
+  name: 'STEP 1- ANTI-FIGHTER BARRAGE',
   content: `
   If this is the first round of a space combat, the players may simultaneously use the “Anti-Fighter Barrage” ability of any of their units in the active system.
   
@@ -2035,7 +2038,7 @@ To resolve a space combat, players perform the following steps:
   3. This step still occurs if no fighters are present.
   `
 }, {
-  name: 'STEP 2—ANNOUNCE RETREATS',
+  name: 'STEP 2- ANNOUNCE RETREATS',
   content: `
 Each player may announce a retreat, beginning with the defender.
 
@@ -2044,7 +2047,7 @@ Each player may announce a retreat, beginning with the defender.
 3. A player cannot announce a retreat if there is not at least one eligible system to retreat to.
 `
 }, {
-  name: 'STEP 3—ROLL DICE',
+  name: 'STEP 3- ROLL DICE',
   content: `
 Each player rolls one die for each ship they have in the active system; this is called a combat roll. If a unit’s combat roll produces a result that is equal to or greater than that unit’s combat value, that result produces a hit.
 
@@ -2056,7 +2059,7 @@ Each player rolls one die for each ship they have in the active system; this is 
 6. The attacker makes all of their combat rolls during this step before the defender. This procedure is important for abilities that allow a player to reroll an opponent’s die.
 `
 }, {
-  name: 'STEP 4—ASSIGN HITS',
+  name: 'STEP 4- ASSIGN HITS',
   content: `
 Each player in the combat must choose and destroy one of their own ships in the active system for each hit their opponent produced.
 
@@ -2064,7 +2067,7 @@ Each player in the combat must choose and destroy one of their own ships in the 
 2. When a unit is destroyed, the player who controls that unit removes it from the board and places it in their reinforcements.
 `
 }, {
-  name: 'STEP 5—RETREAT',
+  name: 'STEP 5- RETREAT',
   content: `
 If a player announced a retreat during step 2, and there is still an eligible system for their units to retreat to, they must retreat.
 
@@ -2077,7 +2080,7 @@ If a player announced a retreat during step 2, and there is still an eligible sy
 `
 After the “Retreat” step, if both players still have ships in the active system, those players resolve another round of space combat beginning with the “Announce Retreats” step.
 `,`
-Space combat ends when only one player—or neither player— has a ship in the space area of the active system. a During the last round of a combat, “end of combat” and “end of combat round” effects occur during the same timing window.
+Space combat ends when only one player-or neither player- has a ship in the space area of the active system. a During the last round of a combat, “end of combat” and “end of combat round” effects occur during the same timing window.
 `,`
 After a combat ends, the player with one or more ships remaining in the system is the winner of the combat; the other player is the loser of the combat. If neither player has a ship remaining, the combat ends in a draw and there is no winner.
 
@@ -2143,27 +2146,27 @@ If the speaker is eliminated from the game, the speaker token is passed to the p
         name: '',
         items: [
 `
-STEP 1—SCORE OBJECTIVES: Following initiative order, each player may score up to one public objective and one secret objective that can be fulfilled during the status phase. To score an objective, a player must fulfill the requirements on the card; if that player does, they gain a number of victory points indicated on the card.
+STEP 1- SCORE OBJECTIVES: Following initiative order, each player may score up to one public objective and one secret objective that can be fulfilled during the status phase. To score an objective, a player must fulfill the requirements on the card; if that player does, they gain a number of victory points indicated on the card.
 `,`
-STEP 2—REVEAL PUBLIC OBJECTIVE: The speaker reveals an unrevealed public objective card by flipping that card faceup.
+STEP 2- REVEAL PUBLIC OBJECTIVE: The speaker reveals an unrevealed public objective card by flipping that card faceup.
 
 1. The speaker cannot reveal “Stage II” objectives until all “Stage I” objectives are revealed.
 2. The game ends if there are no unrevealed public objectives at the start of this step.
 `,`
-STEP 3—DRAW ACTION CARDS: Following initiative order, each player draws one action card.
+STEP 3- DRAW ACTION CARDS: Following initiative order, each player draws one action card.
 `,`
-STEP 4—REMOVE COMMAND TOKENS: Each player removes all of their command tokens from the game board. Each player returns each removed token to their reinforcements.
+STEP 4- REMOVE COMMAND TOKENS: Each player removes all of their command tokens from the game board. Each player returns each removed token to their reinforcements.
 `,`
-STEP 5—GAIN AND REDISTRIBUTE COMMAND TOKENS: Each player gains two command tokens. A player takes each gained token from their reinforcements. Then, each player can redistribute each command token on their command sheet, including the two they just gained, among their strategy, tactic, and fleet pools.
+STEP 5- GAIN AND REDISTRIBUTE COMMAND TOKENS: Each player gains two command tokens. A player takes each gained token from their reinforcements. Then, each player can redistribute each command token on their command sheet, including the two they just gained, among their strategy, tactic, and fleet pools.
 
 1. Players should remember to check the number of their ships in each system after reducing the size of their fleet pools.
 2. This step can usually be resolved simultaneously, but if there is a timing conflict, it is resolved in initiative order.
 `,`
-STEP 6—READY CARDS: Each player readies all of their exhausted cards, including strategy cards.
+STEP 6- READY CARDS: Each player readies all of their exhausted cards, including strategy cards.
 `,`
-STEP 7—REPAIR UNITS: Each player repairs all of their damaged units by turning those units upright.
+STEP 7- REPAIR UNITS: Each player repairs all of their damaged units by turning those units upright.
 `,`
-STEP 8—RETURN STRATEGY CARDS: Each player returns their strategy card to the common play area. Then, if a player has removed the custodians token from Mecatol Rex, the game round continues to the agenda phase. Otherwise, a new game round begins with the strategy phase.
+STEP 8- RETURN STRATEGY CARDS: Each player returns their strategy card to the common play area. Then, if a player has removed the custodians token from Mecatol Rex, the game round continues to the agenda phase. Otherwise, a new game round begins with the strategy phase.
 `,
         ]
       }
@@ -2181,7 +2184,7 @@ After the active player resolves the primary ability on their strategy card, eac
 
 1. Players do not have to resolve the secondary abilities of the active player’s strategy card.
 `,`
-After each player has had an opportunity to resolve a strategy card’s secondary ability, the active player exhausts their strategy card so that it is facedown—this indicates that they cannot use this card again this round and is a reminder that they can now pass during one of their later turns.
+After each player has had an opportunity to resolve a strategy card’s secondary ability, the active player exhausts their strategy card so that it is facedown-this indicates that they cannot use this card again this round and is a reminder that they can now pass during one of their later turns.
 
 1. During three- and four-player games, a player must resolve the strategic action on each of their chosen strategy cards before they can pass.
 `,`
@@ -2238,14 +2241,14 @@ To resolve the strategy phase, players perform the following steps:
         name: '',
         items: [
 `
-STEP 1—Starting with the speaker and proceeding clockwise, each player chooses one strategy card from the common play area and places it faceup in their play area.
+STEP 1- Starting with the speaker and proceeding clockwise, each player chooses one strategy card from the common play area and places it faceup in their play area.
 
 1. If there are one or more trade good tokens on a strategy card when a player chooses it, that player gains those trade goods.
 2. A player cannot choose a strategy card that another player has already chosen during the current strategy phase.
 3. When playing with three or four players, each player will choose a second strategy card. After the last player has received their first strategy card, each player chooses
 4. second strategy card, starting with the speaker and proceeding clockwise.
 `,`
-STEP 2—The speaker places one trade good token from the supply on each strategy card that was not chosen.
+STEP 2- The speaker places one trade good token from the supply on each strategy card that was not chosen.
 
 1. During a four- or eight-player game, all strategy cards will be chosen, and therefore no trade good tokens will be placed on strategy cards. Then, players proceed to the action phase.
 `,
@@ -2348,24 +2351,24 @@ Double-sided tiles that have lines crossing from one edge to another are hyperla
         name: '',
         items: [
 `
-STEP 1—ACTIVATION: The active player must activate a system that does not contain one of their command tokens.
+STEP 1- ACTIVATION: The active player must activate a system that does not contain one of their command tokens.
 
 1. To activate a system, the active player places a command token from their tactic pool in that system. That system is the active system.
 2. Other players’ command tokens do not prevent a player from activating a system.
 `,`
-STEP 2—MOVEMENT: The active player may move any number of ships that have a sufficient move value from any number of systems that do not contain one of their command tokens into the active system, following the rules for movement.
+STEP 2- MOVEMENT: The active player may move any number of ships that have a sufficient move value from any number of systems that do not contain one of their command tokens into the active system, following the rules for movement.
 
 1. Ships that have capacity values can transport ground forces and fighters when moving.
 2. The player may choose to not move any ships.
 3. After the “Move Ships” step, all players can use the “Space Cannon” abilities of their units in the active system.
 `,`
-STEP 3—SPACE COMBAT: If two players have ships in the active system, those players must resolve a space combat.
+STEP 3- SPACE COMBAT: If two players have ships in the active system, those players must resolve a space combat.
 
 1. If the active player is the only player with ships in the system, they skip this step.
 `,`
-STEP 4—INVASION: The active player may use their “Bombardment” abilities, commit units to land on planets, and resolve ground combat against other players’ units.
+STEP 4- INVASION: The active player may use their “Bombardment” abilities, commit units to land on planets, and resolve ground combat against other players’ units.
 `,`
-STEP 5—PRODUCTION: The active player may resolve each of their unit’s “Production” abilities in the active system.
+STEP 5- PRODUCTION: The active player may resolve each of their unit’s “Production” abilities in the active system.
 
 1. The active player may do this even if they did not move units or land ground forces during this tactical action.
 `,
@@ -2486,13 +2489,13 @@ After the active player resolves the primary ability of the “Technology” str
 `
 During the action phase, if the active player has the “Trade” strategy card, they can perform a strategic action to resolve that card’s primary ability. To resolve the primary ability on the “Trade” strategy card, the active player resolves the following effects in order:
 `,`
-STEP 1—The active player gains 3 trade goods.
+STEP 1- The active player gains 3 trade goods.
 `,`
-STEP 2—The active player replenishes their commodities by taking the number of commodity tokens necessary to have an amount equal to the commodity value on their faction sheet. Then, they place those tokens in the commodity area of their faction sheet.
+STEP 2- The active player replenishes their commodities by taking the number of commodity tokens necessary to have an amount equal to the commodity value on their faction sheet. Then, they place those tokens in the commodity area of their faction sheet.
 
 1. A player cannot have more commodities than the commodity value printed on their faction sheet.
 `,`
-STEP 3—The active player chooses any number of other players. Those players use the secondary ability of this card without spending a command token.
+STEP 3- The active player chooses any number of other players. Those players use the secondary ability of this card without spending a command token.
 
 1. The chosen players must resolve the secondary ability of this card without spending a command token after the active player finishes resolving the primary ability
 2. The chosen players can only use the secondary ability once, and they cannot use it by spending command tokens.
@@ -2566,78 +2569,172 @@ While resolving each agenda during the agenda phase, a player may perform one tr
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'TRANSPORT',
+    preamble: 'When a ship moves, it may transport any combination of fighters and ground forces, but the number of units it transports cannot exceed that ship’s capacity value.',
     subsections: [
       {
         name: '',
         items: [
 `
+The ship can pick up and transport fighters and ground forces when it moves. During a tactical action, it can pick up and transport units from the active system, the system it started its movement in, and each system it moves through.
+
+1. These transported units remain with the transporting ship until it is finished moving.
+2. Units being transported by a ship that is removed from the board by a gravity rift are also removed from the board.
+`,`
+Any fighters and ground forces that a ship transports must move with the ship and remain in the space area of a system.
+`,`
+Fighters and ground forces cannot be picked up from a system that contains one of their faction’s command tokens other than the active system.
+`,`
+A player can land ground forces on a planet in a system during the “Invasion” step of a tactical action.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'UNITS',
+    preamble: 'A unit is represented by a plastic figure.',
     subsections: [
       {
         name: '',
         items: [
 `
+There are three types of units: ships, ground forces, and structures.
+`,`
+Each color of plastic comes with the following units:
+
+* 3 Space Docks
+* 6 PDS units
+* 8 Destroyers
+* 8 Cruisers
+* 2 War Suns
+* 12 Infantry
+* 10 Fighters
+* 4 Carriers
+* 5 Dreadnoughts
+* 1 Flagship
+* 4 Mechs
+`,`
+Units exist either on the game board or in a player’s reinforcements.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'UNIT UPGRADES',
+    preamble: 'A unit upgrade is a type of technology card.',
     subsections: [
       {
         name: '',
         items: [
 `
+Unit upgrades share a name with a unit that is printed on a player’s faction sheet, but have a higher roman numeral. For example, a player’s “Carrier I” unit is upgraded by the unit upgrade technology “Carrier II.”
+
+1. The Nekro Virus player may upgrade their units with units of the same type (e.g., “dreadnought” or “infantry”) even if those unit’s names do not match. If the Nekro Virus gains a unit upgrade technology of the same unit type as a unit upgrade technology they already have, the previous upgrade is removed, and they must use the same Valefar Assimilator token that was used to copy the previous upgrade.
+`,`
+Players place unit upgrades they gain faceup on their faction sheets, covering the unit that shares a name with that upgrade card.
+`,`
+The white arrows next to an attribute on a faction sheet indicate that the attribute will improve when the unit is upgraded.
+`,`
+After a player gains a unit upgrade card, each of that player’s units that correspond to that upgrade card is treated as having the attributes and abilities printed on that upgrade card. Any previous attributes of that unit, such as the one printed on that player’s faction sheet, are ignored.
+`,`
+A mech unit card is not a technology.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'VICTORY POINTS',
+    preamble: 'The first player to gain 10 victory points wins the game.',
     subsections: [
       {
         name: '',
         items: [
 `
+Players gain victory points in a variety of ways. A common way that a player can gain victory points is by scoring objectives.
+`,`
+Each player uses the victory point track to indicate the number of victory points they have gained.
+
+1. If the players are using the 14-space side of the victory point track, the game ends and a player wins when they have 14 victory points instead of 10.
+`,`
+Each player places one of their control tokens on space “0” of the victory point track during setup.
+`,`
+When a player gains a victory point, they advance their control token a number of spaces along the victory point track equal to the number of victory points gained.
+
+1. A player’s control token must always be on the space of the victory point track that shows a number that matches the number of victory points that player has gained during the game. A player cannot have more than 10 victory points.
+`,`
+If an ability refers to the player with the “most” or “fewest” victory points, and more than one player is tied in that respect, the effect applies to all of the tied players.
+`,`
+If a player gains a victory point from a law, and that law is discarded, that player does not lose that victory point.
+`,`
+The game ends immediately when one player has 10 victory points. If multiple players would simultaneously gain their 10th victory point, the player who is earliest in initiative order among those players is the winner; if this occurs when players do not have strategy cards, the player who is nearest the speaker (including the speaker) in clockwise order is the winner.
+`,`
+If the game ends because the speaker cannot reveal an objective card, the player with the most victory points is the winner. If one or more players are tied for having the most victory points, the tied player who is first in initiative order is the winner. 
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'WARFARE (STRATEGY CARD)',
+    preamble: 'The “Warfare” strategy card allows a player to remove a command token from the board and redistribute their command tokens between their tactic, fleet, and strategy pools. This card’s initiative value is “6.” During the action phase, if the active player has the “Warfare” strategy card, they can perform a strategic action to resolve that card’s primary ability. To resolve the primary ability on the “Warfare” strategy card, the active player performs the following steps:',
     subsections: [
       {
         name: '',
         items: [
 `
+STEP 1- The active player removes any one of their command tokens from the game board. Then, that player gains that command token by placing it in a pool of their choice on their command sheet.
+`,`
+STEP 2- The active player can redistribute their command tokens.
+`,`
+After the active player resolves the primary ability of the “Warfare” strategy card, each other player, beginning with the player to the left of the active player and proceeding clockwise, may spend one command token from their strategy pool to resolve the “Production” ability of one space dock in their home system. a The command token is not placed in their home system.
 `,
         ]
       }
     ]
   },
   {
-    name: '',
-    preamble: '',
+    name: 'WORMHOLE NEXUS',
+    preamble: 'The wormhole nexus is a system tile where several wormholes converge.',
     subsections: [
       {
         name: '',
         items: [
 `
+The wormhole nexus begins the game in play with its inactive side up.
+
+1. The inactive side of the wormhole nexus contains a gamma wormhole. The active side of the wormhole nexus contains an alpha, beta, and gamma wormhole.
+2. The wormhole nexus is treated as part of the game board.
+3. The wormhole nexus is on the edge of the game board.
+`,`
+After a player moves or places a unit into the wormhole nexus, or gains control of the planet Mallice, that player flips the wormhole nexus to its active side.
+
+1. When a ship moves into the wormhole nexus, the nexus becomes active at the end of the “Movement” step.
+`,
+        ]
+      }
+    ]
+  },
+  {
+    name: 'WORMHOLES',
+    preamble: 'Some systems contain wormholes. Systems that contain identical wormholes are adjacent.',
+    subsections: [
+      {
+        name: '',
+        items: [
+`
+There are two basic types of wormholes: alpha and beta.
+`,`
+If a player has a PDS unit upgrade technology, they can use the “Space Cannon” abilities of their PDS units through wormholes.
+`,`
+Players can be neighbors and perform transactions through wormholes.
+`,`
+There are two advanced types of wormhole: delta and gamma. These wormholes follow all other wormhole rules.
+
+1. The delta wormholes are present on the Creuss Gate system tile and the Ghosts of Creuss home system tile.
+2. The gamma wormholes are present on the wormhole nexus and can be discovered during exploration
 `,
         ]
       }
