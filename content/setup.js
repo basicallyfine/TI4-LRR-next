@@ -1,4 +1,6 @@
 module.exports = `
+This section describes how to set up a game using all of the advanced rules. Note that some of these steps vary slightly from the “First-Game Setup” rules.
+
 ### STEP 1—DETERMINE SPEAKER:
 
 Randomly determine one player to gain the speaker token; that player is the speaker.
@@ -83,11 +85,38 @@ Then, create the rest of game board following these steps:
 until it reaches the speaker again, who places two tiles. Then,
 tile placement reverses again and proceeds clockwise. This process repeats until players have placed all of their tiles.
 
-    Each ring around Mecatol Rex must be fully built before any tile can be placed in the next ring. Anomaly system tiles cannot be placed next to one another unless there is no other option. Additionally, system tiles that contain the same type of wormhole cannot be placed next to one another unless there is no other option. After placing all of the dealt system tiles, players attach their home systems to the rest of the galaxy
+    Each ring around Mecatol Rex must be fully built before any tile can be placed in the next ring. Anomaly system tiles **cannot** be placed next to one another unless there is no other option. Additionally, system tiles that contain the same type of wormhole **cannot** be placed next to one another unless there is no other option. After placing all of the dealt system tiles, players attach their home systems to the rest of the galaxy
 
-    **NOTE**: During a five-player game that does not use hyperlanes,
-    three players will have a slight disadvantage because of their home systems’ starting positions on the game board. After creating the game board, those players receive trade goods according to their positions. Use the diagram on page 6 to determine how many trade goods each of those players receives.
+**NOTE**: During a five-player game that does not use hyperlanes,
+three players will have a slight disadvantage because of their home systems’ starting positions on the game board. After creating the game board, those players receive trade goods according to their positions. Use the diagram on page 6 to determine how many trade goods each of those players receives.
 
+### STEP 7—PLACE GAME BOARD TOKENS:
+
+Place the custodians token in the center of the game board on Mecatol Rex.
+
+Then, place one frontier token on each system that has no planets. Return the remaining frontier tokens to the game box. Place all attachment tokens near the game board.
+
+### STEP 8—SHUFFLE COMMON DECKS:
+
+Shuffle the action card, agenda, stage I objective, stage II objective, and secret objective decks separately and place them in the common play area.
+
+Shuffle the relic deck and each exploration deck separately and place them in the common play area.
+
+### STEP 9—CREATE SUPPLY:
+
+Gather and create separate piles in the common play area for trade good tokens, fighter tokens, and infantry tokens.
+
+Place the planet cards and legendary planet ability cards near the game board.
+
+### STEP 10—GATHER STRATEGY CARDS:
+
+Place each of the eight strategy cards faceup in the common play area within reach of the speaker.
+
+### STEP 11—GATHER STARTING COMPONENTS:
+
+Each player gains the starting technologies and starting units listed on the back of their faction sheet. Each player places the technology cards faceup near their faction sheet and the starting units in their home system.
+
+Each player places three command tokens in their tactic pool, three command tokens in their fleet pool, and two command tokens in their strategy pool.
 ### STEP 12—PREPARE OBJECTIVES:
 
 Prepare objectives as follows:
@@ -96,6 +125,4 @@ Prepare objectives as follows:
 2. Place the victory point track near the game board. As a group, players decide whether to play with the 10- or 14-space side of the victory point track faceup. Each player places one of their control tokens on the “0” space of the track.
 3. The speaker deals five facedown stage I objectives and places them in a row above the victory point track. Then, the speaker deals five facedown stage II objectives and places them in a row below the victory point track.
 4. The speaker reveals the first two stage I objectives.
-
-_[MAP IMAGES]_
 `;
