@@ -15,6 +15,7 @@ const ItemNumber = ({ size = "text-sm", number, tag = "span" }) => {
             <a href={`#${number}`} className={`${styles['item-number-link']} ${size}`}>
                 {number}
             </a>
+            <a className={styles['item-number-anchor']} name={number} />
         </Tag>
     );
 }
@@ -90,6 +91,15 @@ export default function Glossary() {
                 itemNumber += 1;
             })
         });
+
+        if (section.related) {
+            sectionItems.push((
+                <p>
+                    <strong>Related Topics: </strong>
+                    {section.related.map((related, i) => <Fragment key={related[1]}>{i > 0 ? ', ' : ''}<a href={`#${related[1]}`}>{related[0]}</a></Fragment>)}
+                </p>
+            ))
+        }
         
         return sectionItems;
     }));
