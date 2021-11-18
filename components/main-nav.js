@@ -1,6 +1,8 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Fragment } from 'react';
+import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
+
+import Search from '../components/glossary-search';
 
 const navigation = [
     { label: 'Contents', path: '/' },
@@ -34,7 +36,7 @@ export default function MainNav() {
                                     </div>
                                 </div>
                                 <div className="mr-3 md:ml-6 md:mr-0 flex-grow">
-                                    <input type="search" className="text-white block w-full bg-transparent rounded-md border-gray-500 focus:border-white focus:ring focus:ring-indigo-300 focus:ring-opacity-50 h-10" placeholder="Search" />
+                                    <Search />
                                 </div>
                             </div>
                             <div className="-mr-2 flex md:hidden">
